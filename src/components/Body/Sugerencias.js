@@ -70,7 +70,7 @@ const Sugerencias = () => {
                     <AlertTitle mb={2}>Hola!</AlertTitle>
                     <AlertDescription px={5} display="block">
                       <VStack spacing={2}>
-                        <Text w="100%">
+                        {/* <Text w="100%">
                           Por más que algún día
                           <Link
                             isExternal
@@ -97,9 +97,9 @@ const Sugerencias = () => {
                           </Link>{" "}
                           y dejar de agregar funcionalidades nuevas al proyecto,
                           los <em>bugs</em> críticos los voy a seguir arreglando.
-                        </Text>
+                        </Text> */}
                         <Text w="100%">
-                          Así que si encontrás algo que no funciona, avisame!
+                          Si encontrás algo que no funciona o queres mejorar, avisame!
                         </Text>
                         <Text w="100%">
                           Más alla de eso, gracias por usar la herramienta!
@@ -117,7 +117,7 @@ const Sugerencias = () => {
                             href="https://cafecito.app/FdelMazo"
                           >
                             {" "}
-                            Si me querés tirar un cafecito{" "}
+                            Si queres tirar un cafecito{" "}
                             <ExternalLinkIcon
                               _light={{
                                 color: "electivas.500",
@@ -127,12 +127,12 @@ const Sugerencias = () => {
                               }}
                             />
                           </Link>{" "}
-                          , te lo agradezco mucho!
+                          al creador original, te lo agradecerá mucho!
                           <br />
-                          <Text fontSize="xs">
+                          {/* <Text fontSize="xs">
                             (Aunque para ser sincero, aprecio más los mensajes
                             que los cafecitos...)
-                          </Text>
+                          </Text> */}
                         </Text>
                       </VStack>
                       <form
@@ -185,7 +185,7 @@ const Sugerencias = () => {
                               color: "electivas.400",
                             },
                           }}
-                          href="https://github.com/FdelMazo/FIUBA-Map/issues/new"
+                          href="https://github.com/Maleriandro/Bioquimica-Map/issues/new"
                         >
                           levantando un <em>issue</em> directamente.{" "}
                           <ExternalLinkIcon

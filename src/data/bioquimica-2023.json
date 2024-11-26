@@ -1,0 +1,494 @@
+[
+  {
+    "id": "CBC05",
+    "materia": "Química",
+    "creditos": 1,
+    "categoria": "*CBC",
+    "level": -2
+  },
+  {
+    "id": "CBC24",
+    "materia": "Sociedad y Estado",
+    "creditos": 1,
+    "categoria": "*CBC",
+    "level": -2
+  },
+  {
+    "id": "CBC40",
+    "materia": "Pensamiento Cientifico",
+    "creditos": 1,
+    "categoria": "*CBC",
+    "level": -2
+  },
+  {
+    "id": "CBC51",
+    "materia": "Matemática",
+    "creditos": 1,
+    "categoria": "*CBC",
+    "level": -1
+  },
+  {
+    "id": "CBC53",
+    "materia": "Biofísica",
+    "creditos": 1,
+    "categoria": "*CBC",
+    "level": -1
+  },
+  {
+    "id": "CBC54",
+    "materia": "Biología celular",
+    "creditos": 1,
+    "categoria": "*CBC",
+    "level": -1
+  },
+  {
+    "id": "CBC",
+    "materia": "Ciclo Básico Común",
+    "creditos": 0,
+    "categoria": "CBC",
+    "level": 0,
+    "correlativas": "CBC05-CBC24-CBC40-CBC51-CBC53-CBC54"
+  },
+  {
+    "id": "7",
+    "materia": "Química General e Inorgánica",
+    "creditos": 1,
+    "correlativas": "CBC",
+		"correlativa-cursada": "CBC",
+		"correlativa-rendir" : "",
+    "categoria": "Materias Obligatorias",
+    "level": 1
+  },
+	{
+		"id": "8",
+		"materia": "Matemática",
+		"creditos": 1,
+		"correlativas": "CBC",
+		"correlativa-cursada": "CBC",
+		"correlativa-rendir" : "",
+		"categoria": "Materias Obligatorias",
+		"level": 1
+	},
+	{
+		"id": "9",
+		"materia": "Anatomía e Histología",
+		"creditos": 1,
+		"correlativas": "CBC",
+		"correlativa-cursada": "CBC",
+		"correlativa-rendir" : "",
+		"categoria": "Materias Obligatorias",
+		"level": 1
+	},
+	{
+		"id": "10",
+		"materia": "Física",
+		"creditos": 1,
+		"correlativas": "8",
+		"correlativa-cursada": "TP:8",
+		"correlativa-rendir" : "",
+		"categoria": "Materias Obligatorias",
+		"level": 2
+	},
+	{
+		"id": "11",
+		"materia": "Biología Celular y Molecular",
+		"creditos": 1,
+		"correlativas": "9",
+		"correlativa-cursada": "TP:9",
+		"correlativa-rendir" : "",
+		"categoria": "Materias Obligatorias",
+		"level": 2
+	},
+	{
+		"id": "12",
+		"materia": "Química Orgánica I",
+		"creditos": 1,
+		"correlativas": "7",
+		"correlativa-cursada": "TP:7",
+		"correlativa-rendir" : "F:7",
+		"categoria": "Materias Obligatorias",
+		"level": 2
+	},
+	{
+		"id": "13",
+		"materia": "Química Orgánica II",
+		"creditos": 1,
+		"correlativas": "10-12",
+		"correlativa-cursada": "TP:10 TP:12",
+		"correlativa-rendir" : "F:12",
+		"categoria": "Materias Obligatorias",
+		"level": 3
+	},
+	{
+		"id": "14",
+		"materia": "Fisiología",
+		"creditos": 1,
+		"correlativas": "9-11",
+		"correlativa-cursada": "F:9 TP:11",
+		"correlativa-rendir" : "F:11",
+		"categoria": "Materias Obligatorias",
+		"level": 3
+	},
+	{
+		"id": "15",
+		"materia": "Química Analítica",
+		"creditos": 1,
+		"correlativas": "7-8",
+		"correlativa-cursada": "F:7 TP:8",
+		"correlativa-rendir" : "F:8",
+		"categoria": "Materias Obligatorias",
+		"level": 3
+	},
+	{
+		"id": "16",
+		"materia": "Fisicoquímica",
+		"creditos": 1,
+		"correlativas": "7-10",
+		"correlativa-cursada": "F:7 TP:10",
+		"correlativa-rendir" : "F:10",
+		"categoria": "Materias Obligatorias",
+		"level": 4
+	},
+	{
+		"id": "17",
+		"materia": "Química Analítica Instrumental",
+		"creditos": 1,
+		"correlativas": "10-15",
+		"correlativa-cursada": "F:10 TP:15",
+		"correlativa-rendir" : "F:15",
+		"categoria": "Materias Obligatorias",
+		"level": 4
+	},
+	{
+		"id": "18",
+		"materia": "Química Biológica",
+		"creditos": 1,
+		"correlativas": "11-13",
+		"correlativa-cursada": "F:11 TP:13",
+		"correlativa-rendir" : "F:13",
+		"categoria": "Materias Obligatorias",
+		"level": 4
+	},
+	{
+		"id": "19",
+		"materia": "Fisiopatología",
+		"creditos": 1,
+		"correlativas": "14",
+		"correlativa-cursada": "TP:14",
+		"correlativa-rendir" : "F:14",
+		"categoria": "Materias Obligatorias",
+		"level": 5
+	},
+	{
+		"id": "20",
+		"materia": "Microbiología",
+		"creditos": 1,
+		"correlativas": "18",
+		"correlativa-cursada": "TP:18",
+		"correlativa-rendir" : "",
+		"categoria": "Materias Obligatorias",
+		"level": 5
+	},
+	{
+		"id": "21",
+		"materia": "Química Biológica Superior",
+		"creditos": 1,
+		"correlativas": "16-17-18",
+		"correlativa-cursada": "TP:16 TP:17 TP:18",
+		"correlativa-rendir" : "F:16 F:18",
+		"categoria": "Materias Obligatorias",
+		"level": 5
+	},
+	{
+		"id": "22",
+		"materia": "Genética Molecular",
+		"creditos": 1,
+		"correlativas": "18",
+		"correlativa-cursada": "TP:18",
+		"correlativa-rendir" : "",
+		"categoria": "Materias Obligatorias",
+		"level": 5
+	},
+	{
+		"id": "23",
+		"materia": "Inmunología",
+		"creditos": 1,
+		"correlativas": "14-20",
+		"correlativa-cursada": "F:14 TP:20",
+		"correlativa-rendir" : "F:18",
+		"categoria": "Materias Obligatorias",
+		"level": 6
+	},
+	{
+		"id": "24",
+		"materia": "Farmacología",
+		"creditos": 1,
+		"correlativas": "14-18-19",
+		"correlativa-cursada": "F:14 TP:18 TP:19",
+		"correlativa-rendir" : "F:18",
+		"categoria": "Materias Obligatorias",
+		"level": 6
+	},
+	{
+		"id": "25",
+		"materia": "Biotecnología",
+		"creditos": 1,
+		"correlativas": "20-22",
+		"correlativa-cursada": "TP:20 TP:22",
+		"correlativa-rendir" : "F:20 F:22",
+		"categoria": "Materias Obligatorias",
+		"level": 6
+	},
+	{
+		"id": "26",
+		"materia": "Virología",
+		"creditos": 1,
+		"correlativas": "20-22",
+		"correlativa-cursada": "TP:20 TP:22",
+		"correlativa-rendir" : "F:20 F:22",
+		"categoria": "Materias Obligatorias",
+		"level": 6
+	},
+	{
+		"id": "27",
+		"materia": "Nutrición",
+		"creditos": 1,
+		"correlativas": "14-18-19",
+		"correlativa-cursada": "F:14 F:18 TP:19",
+		"correlativa-rendir" : "F:19",
+		"categoria": "Materias Obligatorias",
+		"level": 6
+	},
+	{
+		"id": "28",
+		"materia": "Microbiología Clínica",
+		"creditos": 1,
+		"correlativas": "19-23-26",
+		"correlativa-cursada": "TP:19 TP:23 TP:26",
+		"correlativa-rendir" : "F:19 F:20 F:23",
+		"categoria": "Materias Obligatorias",
+		"level": 7
+	},
+	{
+		"id": "29",
+		"materia": "Bioquímica Clínica I",
+		"creditos": 1,
+		"correlativas": "18-19-21-23",
+		"correlativa-cursada": "F:18 TP:19 TP:21 TP:23",
+		"correlativa-rendir" : "F:19 F:23",
+		"categoria": "Materias Obligatorias",
+		"level": 7
+	},
+	{
+		"id": "30A",
+		"materia": "Práct. Prof Bioquímica Interna I (Simultánea con Bioquímica Clínica I)",
+		"creditos": 1,
+		"correlativas": "29",
+		"correlativa-cursada": "",
+		"correlativa-rendir" : "",
+		"categoria": "Materias Obligatorias",
+		"level": 7
+	},
+	{
+		"id": "31",
+		"materia": "Toxicología y Química Legal",
+		"creditos": 1,
+		"correlativas": "15-18-17-24",
+		"correlativa-cursada": "F:15 F:18 TP:17 TP:24",
+		"correlativa-rendir" : "F:17 F:24",
+		"categoria": "Materias Obligatorias",
+		"level": 8
+	},
+	{
+		"id": "32",
+		"materia": "Bromatología",
+		"creditos": 1,
+		"correlativas": "20-27",
+		"correlativa-cursada": "TP:20 TP:27",
+		"correlativa-rendir" : "F:20",
+		"categoria": "Materias Obligatorias",
+		"level": 8
+	},
+	{
+		"id": "33",
+		"materia": "Bioquímica de Metabolopatias",
+		"creditos": 1,
+		"correlativas": "18-19",
+		"correlativa-cursada": "TP:18 TP:19",
+		"correlativa-rendir" : "F:18 F:19",
+		"categoria": "Materias Obligatorias",
+		"level": 8
+	},
+	{
+		"id": "34",
+		"materia": "Genética Forense",
+		"creditos": 1,
+		"correlativas": "22",
+		"correlativa-cursada": "TP:22",
+		"correlativa-rendir" : "F:22",
+		"categoria": "Materias Obligatorias",
+		"level": 8
+	},
+	{
+		"id": "35",
+		"materia": "Bioquímica Clínica II",
+		"creditos": 1,
+		"correlativas": "19-29",
+		"correlativa-cursada": "F:19 TP:29",
+		"correlativa-rendir" : "F:21",
+		"categoria": "Materias Obligatorias",
+		"level": 8
+	},
+	{
+		"id": "30B",
+		"materia": "Práct. Prof Bioquímica Interna II (Simultánea con Bioquímica Clínica II)",
+		"creditos": 1,
+		"correlativas": "35",
+		"correlativa-cursada": "",
+		"correlativa-rendir" : "",
+		"categoria": "Materias Obligatorias",
+		"level": 8
+	},
+	{
+		"id": "36",
+		"materia": "Práct. Prof Bioquímica Externa",
+		"creditos": 1,
+		"correlativas": "30A-30B",
+		"correlativa-cursada": "TP:30A TP:30B",
+		"correlativa-rendir" : "",
+		"categoria": "Materias Obligatorias",
+		"level": 9
+	},
+
+
+	{
+		"id": "43",
+		"materia": "Inglés",
+		"creditos": 1,
+		"correlativas": "",
+		"correlativa-cursada": "",
+		"correlativa-rendir" : "",
+		"categoria": "Materias Obligatorias",
+		"requiere": 10,
+		"requiereCBC": true,
+		"level": 10
+	},
+	{
+		"id": "44",
+		"materia": "Bioestadística",
+		"creditos": 1,
+		"correlativas": "8",
+		"correlativa-cursada": "TP:8",
+		"correlativa-rendir" : "F:8",
+		"categoria": "Materias Obligatorias",
+		"level": 9
+	},
+	{
+		"id": "45",
+		"materia": "Leg. Bioquímica y DD.HH.",
+		"creditos": 1,
+		"correlativas": "",
+		"correlativa-cursada": "",
+		"correlativa-rendir" : "",
+		"categoria": "Materias Obligatorias",
+		"requiere": 10,
+		"requiereCBC": true,
+		"level": 10
+	},
+	{
+		"id": "46",
+		"materia": "Salud Pública",
+		"creditos": 1,
+		"correlativas": "20",
+		"correlativa-cursada": "TP:20",
+		"correlativa-rendir" : "",
+		"categoria": "Materias Obligatorias",
+		"level": 9
+	},
+	{
+		"id": "47",
+		"materia": "Práctica Social Educativa",
+		"creditos": 1,
+		"correlativas": "",
+		"correlativa-cursada": "",
+		"correlativa-rendir" : "",
+		"categoria": "Materias Obligatorias",
+		"requiere": 10,
+		"requiereCBC": true,
+		"level": 10
+	},
+	{
+		"id": "BC1",
+		"materia": "Bioquimica Clinica III",
+		"creditos": 1,
+		"correlativas": "",
+		"correlativa-cursada": "",
+		"correlativa-rendir" : "",
+		"categoria": "Bioquimica Clinica",
+		"requiere": 10,
+		"requiereCBC": true,
+		"level": 11
+	},
+	{
+		"id": "BA1",
+		"materia": "Ambiente y Salud",
+		"creditos": 1,
+		"correlativas": "",
+		"correlativa-cursada": "",
+		"correlativa-rendir" : "",
+		"categoria": "Bioquímica Ambiental",
+		"requiere": 10,
+		"requiereCBC": true,
+		"level": 11
+	},
+	{
+		"id": "MeI1",
+		"materia": "Inmunologia de los Procesos infecciosos",
+		"creditos": 1,
+		"correlativas": "",
+		"correlativa-cursada": "",
+		"correlativa-rendir" : "",
+		"categoria": "Microbiologia e lnmunologia",
+		"requiere": 10,
+		"requiereCBC": true,
+		"level": 11
+	},
+	{
+		"id": "IB1",
+		"materia": "Cinetica Enzimatica",
+		"creditos": 1,
+		"correlativas": "",
+		"correlativa-cursada": "",
+		"correlativa-rendir" : "",
+		"categoria": "Investigacion Basica",
+		"requiere": 10,
+		"requiereCBC": true,
+		"level": 11
+	},
+	{
+		"id": "BI1",
+		"materia": "",
+		"creditos": 1,
+		"correlativas": "Procesos de Biotecnologia",
+		"correlativa-cursada": "",
+		"correlativa-rendir" : "",
+		"categoria": "Bioquímica Industrial",
+		"requiere": 10,
+		"requiereCBC": true,
+		"level": 11
+	},
+	{
+		"id": "BLyF1",
+		"materia": "Toxicología Forense",
+		"creditos": 1,
+		"correlativas": "",
+		"correlativa-cursada": "",
+		"correlativa-rendir" : "",
+		"categoria": "Bioquímica Legal y Forense",
+		"requiere": 10,
+		"requiereCBC": true,
+		"level": 11
+	}
+	
+
+]

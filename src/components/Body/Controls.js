@@ -34,26 +34,8 @@ const Controls = () => {
           )}
         </Link>
       </Tooltip>
-      <Tooltip placement="top" label="FIUBA-Plan">
-        <Link
-          isExternal
-          color={useColorModeValue("text", "textdark")}
-          href="https://fede.dm/FIUBA-Plan/"
-        >
-          <Icon
-            boxSize={{ base: 4, md: 5 }}
-            ml={{ base: 1, md: 2 }}
-            viewBox="0 0 448 512"
-          >
-            <path
-              fill="currentColor"
-              d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm64-192c0-8.8 7.2-16 16-16h96c8.8 0 16 7.2 16 16v96c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16v-96zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"
-            />
-          </Icon>
-        </Link>
-      </Tooltip>
-      <Tooltip placement="top" label="FdelMazo/FIUBA-Map">
-        <Link isExternal href="https://github.com/fdelmazo/FIUBA-Map">
+      <Tooltip placement="top" label="Maleriandro/Bioquimica-Map">
+        <Link isExternal href="https://github.com/Maleriandro/Bioquimica-Map">
           <Icon
             boxSize={{ base: 4, md: 5 }}
             ml={{ base: 1, md: 2 }}
@@ -66,7 +48,7 @@ const Controls = () => {
           </Icon>
         </Link>
       </Tooltip>
-      <Tooltip placement="top" label="Invitame un Cafecito">
+      <Tooltip placement="top" label="Invitá un Cafecito al creador original">
         <Link isExternal href="https://cafecito.app/fdelmazo">
           <Icon
             boxSize={{ base: 4, md: 5 }}

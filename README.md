@@ -1,14 +1,14 @@
-# [FIUBA Map](https://fede.dm/FIUBA-Map/)
+# [Bioquimca Map](https://maleriandro.github.io/Bioquimica-Map/)
 
-Mapa de materias y sus correlativas de la Facultad de Ingeniería
+Mapa de materias y sus correlativas de la carrera de Bioquimica en la UBA.
 
 ---
 
-La idea de este proyecto es presentar de una manera interactiva el plan de estudios de las carreras de la Facultad de Ingeniería, Universidad de Buenos Aires, para saber que materias se pueden cursar, cuantos créditos se tienen actualmente y demás.
+Este proyecto es un fork del proyecto de [FIUBA Map](https://github.com/FdelMazo/FIUBA-Map/) de FdelMazo.
 
 <a href='https://imgur.com/QkXbwFc'><img src='public/fmap.png'></a>
 
-- Tiene todas las carreras que se dan en la Facultad de Ingeniería, en sus respectivos últimos planes de estudio.
+- Tiene unicamente la carrera de Bioquimica, en sus ambas versiones.
 
 - Todas las carreras incluyen todas las materias electivas y todas las materias de sus respectivas orientaciones.
 

@@ -29,6 +29,25 @@ import { COLORS } from "./theme";
 
 export const CARRERAS = [
   {
+    id: "bioquimica",
+    link: "https://www.ffyb.uba.ar/wp-content/uploads/2024/02/Bioquimica-Plan-2023-simplificado.pdf",
+    ano: 2023,
+    graph: require("./data/bioquimica-2023.json"),
+    orientaciones: [
+      { nombre: "Bioquímica Clínica", colorScheme: "orientacion1" },
+      { nombre: "Bioquímica Ambiental", colorScheme: "orientacion2" },
+      { nombre: "Microbiología e Inmunología", colorScheme: "orientacion3" },
+      { nombre: "Ingestigación Básica", colorScheme: "orientacion4" },
+      { nombre: "Bioquímica Industrial", colorScheme: "orientacion5" },
+      { nombre: "Bioquímica Legal y Forense", colorScheme: "orientacion6" },
+    ],
+
+    creditos: {
+      total: 50,
+      electivas: 0
+    }
+  },
+  {
     id: "sistemasviejo",
     link: "https://fi.uba.ar/grado/carreras/lic-en-analisis-de-sistemas/plan-de-estudios",
     ano: 1986,
@@ -631,6 +650,11 @@ export const CARRERAS = [
 // Acá se define como se le presentan al usuario la lista de planes/carreras
 // Todos los ids de `CARRERAS` tienen que estar usados acá
 export const PLANES = [
+  {
+    nombre: "Bioquímica",
+    nombrecorto: "Bioquímica",
+    planes: ["bioquimica"],
+  },
   {
     nombre: "Ingeniería Civil",
     nombrecorto: "Civil",

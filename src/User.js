@@ -1,7 +1,7 @@
 import React from "react";
 import { CARRERAS } from "./carreras";
 import * as C from "./constants";
-import { getFiubaRepos, getGraphs, postGraph, postUser } from "./dbutils";
+import { getGraphs, postGraph, postUser } from "./dbutils";
 
 // La base de datos se parte en dos tablas (relacional... ponele)
 // La clave que une a las bases de datos es la combinación de padron y carrera
@@ -13,7 +13,7 @@ import { getFiubaRepos, getGraphs, postGraph, postUser } from "./dbutils";
 // maps contiene todos los mapas que tiene el usuario en la DB
 const initialUser = {
   padron: "",
-  carrera: CARRERAS.find((c) => c.id === "sistemas"),
+  carrera: CARRERAS.find((c) => c.id === "bioquimica"),
   orientacion: null,
   finDeCarrera: null,
   allLogins: [],
@@ -45,16 +45,6 @@ const Login = () => {
       login(padronInput);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  // On boot pedimos todos los fiuba repos para poder mostrarlos en el header
-  // Un poquito de cross promotion nunca mato a nadie...
-  const [fiubaRepos, setFiubaRepos] = React.useState([]);
-  React.useEffect(() => {
-    const fetchFiubaRepos = async () => {
-      setFiubaRepos(await getFiubaRepos());
-    };
-    fetchFiubaRepos();
   }, []);
 
   // Login agarra todo lo que sabemos del usuario, de ambas tablas de la db
@@ -224,7 +214,6 @@ const Login = () => {
     setUser,
     padronInput,
     setPadronInput,
-    fiubaRepos,
     loggingIn,
     saveUserGraph,
     signup,
