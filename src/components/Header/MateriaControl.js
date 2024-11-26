@@ -8,9 +8,9 @@ import {
 import {
   Button,
   Flex,
-  Box,
-  Text,
-  Link,
+  // Box,
+  // Text,
+  // Link,
   HStack,
   NumberDecrementStepper,
   NumberIncrementStepper,
@@ -18,7 +18,7 @@ import {
   NumberInputField,
   NumberInputStepper,
   Tooltip,
-  Hide,
+  // Hide,
 } from "@chakra-ui/react";
 import React from "react";
 import { FaUndo } from "react-icons/fa";
@@ -64,7 +64,7 @@ const NumberStepperProps = {
 
 // Botonera para cambiar la nota y el cuatri de la materia seleccionada
 const MateriaControl = () => {
-  const { fiubaRepos, logged } = React.useContext(UserContext);
+  const { logged } = React.useContext(UserContext);
 
   const { getNode, aprobar, displayedNode, desaprobar, cursando } =
     React.useContext(GraphContext);
