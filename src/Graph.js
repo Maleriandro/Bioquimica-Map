@@ -144,14 +144,29 @@ const Graph = (userContext) => {
     const nodes = user.carrera.graph.map((n) => new Node(n));
     const edges = user.carrera.graph.flatMap((n) => {
       let e = [];
-      if (n.correlativas)
-        n.correlativas.split("-").forEach((c) => {
+      // if (n.correlativas)
+      //   n.correlativas.split("-").forEach((c) => {
+      //     e.push({
+      //       from: c,
+      //       to: n.id,
+      //       smooth: { enabled: true, type: "curvedCW", roundness: 0.1 },
+      //       dashes: true,
+      //     });
+      //   });
+
+      if (n["correlativa-cursada"]) {
+        n["correlativa-cursada"].split(" ").forEach((c) => {
+          let [tipo, id] = c.split(":");
+
           e.push({
-            from: c,
+            from: id,
             to: n.id,
             smooth: { enabled: true, type: "curvedCW", roundness: 0.1 },
+            dashes: tipo === "TP",
           });
         });
+      }
+
       if (n.requiere) e.push({ from: "CBC", to: n.id, color: "transparent" });
       return e;
     });

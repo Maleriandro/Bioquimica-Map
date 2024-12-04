@@ -54,7 +54,7 @@
     "materia": "Química General e Inorgánica",
     "creditos": 1,
     "correlativas": "CBC",
-		"correlativa-cursada": "CBC",
+		"correlativa-cursada": "F:CBC",
 		"correlativa-rendir" : "",
     "categoria": "Materias Obligatorias",
     "level": 1
@@ -64,7 +64,7 @@
 		"materia": "Matemática",
 		"creditos": 1,
 		"correlativas": "CBC",
-		"correlativa-cursada": "CBC",
+		"correlativa-cursada": "F:CBC",
 		"correlativa-rendir" : "",
 		"categoria": "Materias Obligatorias",
 		"level": 1
@@ -74,7 +74,7 @@
 		"materia": "Anatomía e Histología",
 		"creditos": 1,
 		"correlativas": "CBC",
-		"correlativa-cursada": "CBC",
+		"correlativa-cursada": "F:CBC",
 		"correlativa-rendir" : "",
 		"categoria": "Materias Obligatorias",
 		"level": 1
