@@ -2,37 +2,37 @@ import { CARRERAS } from "./carreras";
 import { COLORS } from "./theme";
 
 export const USER_FORM =
-  "https://docs.google.com/forms/u/1/d/e/1FAIpQLSedZWz0SJOLsxEscmHo8FDdTQyIF5xTczGBqr1Z6oLwKwiemw/formResponse";
+  "https://docs.google.com/forms/d/e/1FAIpQLScTHN04Pgaoxrqm_LhOgU4cf58YuVfxe_0deyR6AxpOdLXiaQ/formResponse";
 
 export const USER_FORM_ENTRIES = {
-  padron: "entry.1608351524",
-  carrera: "entry.1130086596",
-  orientacion: "entry.1483291801",
-  finDeCarrera: "entry.310979509",
+  padron: "entry.464902847",
+  carrera: "entry.487080778",
+  orientacion: "entry.830260436",
+  finDeCarrera: "entry.480438023",
 };
 
 export const GRAPH_FORM =
-  "https://docs.google.com/forms/d/e/1FAIpQLScEomNxSEdv07ifB9ep5olsemzRjdPoMMhWL6GLGhswm93shg/formResponse";
+  "https://docs.google.com/forms/d/e/1FAIpQLSdbT_w5643rebvaVvqlB0aIjDX_qCCwisCdwztIo4xvvQSwaA/formResponse"
 
 export const GRAPH_FORM_ENTRIES = {
-  padron: "entry.2064135385",
-  carrera: "entry.977368567",
-  map: "entry.2113204957",
+  padron: "entry.226518455",
+  carrera: "entry.525004323",
+  map: "entry.1236999891",
 };
 
 export const BUGS_FORM =
-  "https://docs.google.com/forms/d/1Mr4-4qWqZKaobjG3GI30aPvC5qlMsd6Eib3YGUbLd2k/formResponse";
+  "https://docs.google.com/forms/d/e/1FAIpQLSeo8G9gjhQl_WkuZ_Z8FUvBQuJl16kGkvIRQs36T8dTBqI8nQ/formResponse";
 
 export const BUGS_FORM_ENTRIES = {
-  padron: "entry.108884877",
-  carrera: "entry.30310619",
-  orientacion: "entry.2052513370",
-  finDeCarrera: "entry.1835776497",
-  bug: "entry.817568535",
+  padron: "entry.1631817278",
+  carrera: "entry.1117519531",
+  orientacion: "entry.1307452528",
+  finDeCarrera: "entry.1344094012",
+  bug: "entry.118847280",
 };
 
 export const SPREADSHEET =
-  "https://sheets.googleapis.com/v4/spreadsheets/1b6h2RApBs2xbN6-eGVvxH68EALKDklvS91fb7d_IVz4/values";
+  "https://sheets.googleapis.com/v4/spreadsheets/1ug5ugOWvRGgdm11CXDRX1aLaMZF89ebIMJhwVAvSaSc/values";
 
 export const SHEETS = {
   user: "usuarios",
@@ -40,12 +40,12 @@ export const SHEETS = {
 };
 
 
-// Por default, una google key que solo funciona desde el dominio "fede.dm"
+// Por default, una google key que solo funciona desde el dominio "maleriandro.github.io"
 // para que ande en todos lados (o sea, para poder testear la herramienta) hay que tener un archivo
-// .env solamente con la linea `REACT_APP_FEDE_KEY="<KEY>"` (pedirle la key a algun autor...)
+// .env solamente con la linea `REACT_APP_MALERIANDRO_KEY="<KEY>"` (pedirle la key a algun autor...)
 // (si, por algun motivo la envvar tiene que empezar con `REACT_APP`)
 export const KEY =
-  process.env.REACT_APP_FEDE_KEY || "AIzaSyA9snz4CXDq_K8fJeUXkRtRZAQM90HTFp4";
+  process.env.REACT_APP_MALERIANDRO_KEY || "AIzaSyChfUWvsFacySe3KnHtLXzl95OOxZGF1Ls";
 
 // Dibuja un rombo
 const drawFinDeCarrera = ({
