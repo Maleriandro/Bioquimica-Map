@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/Bioquimica-Map/static/js/main.3fbf88c3.js",
+    "main.js": "/Bioquimica-Map/static/js/main.c29105a1.js",
     "index.html": "/Bioquimica-Map/index.html",
-    "main.3fbf88c3.js.map": "/Bioquimica-Map/static/js/main.3fbf88c3.js.map"
+    "main.c29105a1.js.map": "/Bioquimica-Map/static/js/main.c29105a1.js.map"
   },
   "entrypoints": [
-    "static/js/main.3fbf88c3.js"
+    "static/js/main.c29105a1.js"
   ]
 }
