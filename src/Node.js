@@ -88,6 +88,20 @@ class Node {
     return this;
   }
 
+  // Incluye si la materia esta aprobada por equivalencia, o si esta aprobada con nota
+  cursadaAprobada() {
+    return this.nota >= -1;
+  }
+
+  // Incluye si la materia esta aprobada por equivalencia.
+  finalAprobado() {
+    return this.nota >= 0;
+  }
+
+  aprobadaPorEquivalencia() {
+    return this.aprobada && this.nota === 0;
+  }
+
   // Una materia esta habilitada cuando todas sus correlativas estan aprobadas
   // Tambien, hay materias que "requieren" un minimo de creditos
   // Si "requiereCBC", entonces se consideran los creditos totales
@@ -96,22 +110,52 @@ class Node {
   //  es MUY poco claro en todos los planes de fiuba, y todos varian,
   //  asi que puede no ser 100% fiel a la realidad
   isHabilitada(ctx) {
+
+    let materiasNecesariasParaCursar = [];
+
+    if (this["correlativa-cursada"]) {
+      materiasNecesariasParaCursar = this["correlativa-cursada"].split(" ");
+    }
+
+    const materiasCursadasNecesariaParaCursar = []
+    const materiasFinalNecesarioParaCursar = []
+
+    for (let materia of materiasNecesariasParaCursar) {
+      const [tipo, id] = materia.split(":")
+      if (tipo === "TP") {
+        materiasCursadasNecesariaParaCursar.push(id)
+      } else if (tipo === "F") {
+        materiasFinalNecesarioParaCursar.push(id)
+      }
+    }
+
+    
     const { getters, getNode, creditos } = ctx;
     const { creditosTotales, creditosCBC } = creditos;
     const from = getters.NodesFrom(this.id);
-    let todoAprobado = true;
+    let estaHabilitadoParaCursar = true;
     for (let id of from) {
       const m = getNode(id);
-      todoAprobado &= m.aprobada;
-    }
-    if (this.requiere) {
-      if (this.requiereCBC) {
-        todoAprobado &= creditosTotales >= this.requiere;
-      } else {
-        todoAprobado &= creditosTotales - creditosCBC >= this.requiere;
+      //Si no aprobada la cursada, y es necesaria, no esta aprobado
+      if (materiasCursadasNecesariaParaCursar.includes(m.id) && !m.cursadaAprobada()) {
+        estaHabilitadoParaCursar = false;
+        break;
+      }
+
+      if (materiasFinalNecesarioParaCursar.includes(m.id) && !m.finalAprobado()) {
+        estaHabilitadoParaCursar = false;
+        break;
       }
     }
-    return todoAprobado;
+    
+    if (this.requiere) {
+      if (this.requiereCBC) {
+        estaHabilitadoParaCursar &= creditosTotales >= this.requiere;
+      } else {
+        estaHabilitadoParaCursar &= creditosTotales - creditosCBC >= this.requiere;
+      }
+    }
+    return estaHabilitadoParaCursar;
   }
 
   // Actualiza el nodo de acuerdo a tooodas sus propiedades
@@ -136,10 +180,34 @@ class Node {
     if (showLabels && this.id !== "CBC") {
       if (this.aprobada && this.nota > 0)
         labelDefault += "\n[" + this.nota + "]";
-      else if (this.aprobada && this.nota === 0)
+      else if (this.aprobadaPorEquivalencia())
         labelDefault += "\n[Equivalencia]";
-      else if (this.nota === -1) labelDefault += "\n[En Final]";
-      else if (this.cuatrimestre === getCurrentCuatri())
+      else if (this.cursadaAprobada()) {
+        labelDefault += "\n[En Final]"
+
+        //Obtengo todas las aristas conectadas al nodo actual
+        const edgesIds = getters.NeighborEdges(this.id);
+
+        //Itero cada arista para elegir cual modificar
+        edgesIds.forEach(edgeId => {
+          //Obtengo la arista y el nodo al que apunta
+          const edge = ctx.network.body.data.edges.get(edgeId);
+          const node = ctx.network.body.data.nodes.get(edge.to);
+
+
+          if (node.id === this.id) {
+            //La arista apunta a este nodo, osea viene de un nodo anterior
+          } else {
+            if (edge.dashes === true) {
+              //En caso de que sea una arista punteada (osea requisito de cursada), 
+              // Se cambia a color verde (requisito cumplido), porque ya se aprobo la cursada
+              ctx.network.body.data.edges.update({ id: edgeId, color: COLORS.aprobadas[400] });
+            }
+          }
+        });
+        
+
+      } else if (this.cuatrimestre === getCurrentCuatri())
         labelDefault += "\n[Cursando]";
     }
     this.label = labelDefault;

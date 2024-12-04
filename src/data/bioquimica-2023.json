@@ -47,7 +47,8 @@
     "creditos": 0,
     "categoria": "CBC",
     "level": 0,
-    "correlativas": "CBC05-CBC24-CBC40-CBC51-CBC53-CBC54"
+    "correlativas": "CBC05-CBC24-CBC40-CBC51-CBC53-CBC54",
+	"correlativa-cursada": "F:CBC05 F:CBC24 F:CBC40 F:CBC51 F:CBC53 F:CBC54"
   },
   {
     "id": "7",

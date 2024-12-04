@@ -144,15 +144,6 @@ const Graph = (userContext) => {
     const nodes = user.carrera.graph.map((n) => new Node(n));
     const edges = user.carrera.graph.flatMap((n) => {
       let e = [];
-      // if (n.correlativas)
-      //   n.correlativas.split("-").forEach((c) => {
-      //     e.push({
-      //       from: c,
-      //       to: n.id,
-      //       smooth: { enabled: true, type: "curvedCW", roundness: 0.1 },
-      //       dashes: true,
-      //     });
-      //   });
 
       if (n["correlativa-cursada"]) {
         n["correlativa-cursada"].split(" ").forEach((c) => {
