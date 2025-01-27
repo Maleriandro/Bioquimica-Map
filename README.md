@@ -6,7 +6,7 @@ Mapa de materias y sus correlativas de la carrera de Bioquimica en la UBA.
 
 Este proyecto es un fork del proyecto de [FIUBA Map](https://github.com/FdelMazo/FIUBA-Map/) de FdelMazo.
 
-<a href='https://imgur.com/QkXbwFc'><img src='public/fmap.png'></a>
+<a href='https://maleriandro.github.io/Bioquimica-Map/'><img src='preview.png'></a>
 
 - Tiene unicamente la carrera de Bioquimica, en sus ambas versiones.
 
