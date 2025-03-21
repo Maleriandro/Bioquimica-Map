@@ -43,7 +43,7 @@ export const CARRERAS = [
     ],
 
     creditos: {
-      total: 50,
+      total: 42,
       electivas: 0
     }
   },
