@@ -127,7 +127,10 @@ class Node {
 
     for (let materia of materiasNecesariasParaCursar) {
       const [tipo, id] = materia.split(":")
-      if (tipo === "TP") {
+      if (id === undefined) {
+        //Quiere decir que no hay tipo e Id, sino que es un id solo
+        materiasCursadasNecesariaParaCursar.push(tipo)
+      } else if (tipo === "TP") {
         materiasCursadasNecesariaParaCursar.push(id)
       } else if (tipo === "F") {
         materiasFinalNecesarioParaCursar.push(id)

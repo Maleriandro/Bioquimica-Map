@@ -1,0 +1,206 @@
+[
+    {
+      "id": "CBC66",
+      "materia": "Análisis Matemático A",
+      "creditos": 9,
+      "categoria": "*CBC",
+      "level": -2
+    },
+    {
+      "id": "CBC62",
+      "materia": "Álgebra A",
+      "creditos": 9,
+      "categoria": "*CBC",
+      "level": -2
+    },
+    {
+      "id": "CBC24",
+      "materia": "Introducción al Conocimiento de la Sociedad y el Estado",
+      "creditos": 4,
+      "categoria": "*CBC",
+      "level": -2
+    },
+    {
+      "id": "CBC3",
+      "materia": "Física",
+      "creditos": 6,
+      "categoria": "*CBC",
+      "level": -1
+    },
+    {
+      "id": "CBC90",
+      "materia": "Pensamiento Computacional",
+      "creditos": 6,
+      "categoria": "*CBC",
+      "level": -1
+    },
+    {
+      "id": "CBC40",
+      "materia": "Introducción al Pensamiento Científico",
+      "creditos": 4,
+      "categoria": "*CBC",
+      "level": -1
+    },
+    {
+      "id": "CBC",
+      "materia": "Ciclo Básico Común",
+      "creditos": 0,
+      "categoria": "CBC",
+      "level": 0,
+      "correlativas": "CBC66 CBC62 CBC3 CBC90 CBC24 CBC40"
+    },
+    {
+        "id": "AL",
+        "materia": "Álgebra",
+        "creditos": 10,
+        "categoria": "Materias Obligatorias",
+        "level": 1,
+        "correlativas": "CBC"
+    },
+    {
+        "id": "IP",
+        "materia": "Introducción a la Programación",
+        "creditos": 10,
+        "categoria": "Materias Obligatorias",
+        "level": 1,
+        "correlativas": "CBC"
+    },
+    {
+        "id": "AM",
+        "materia": "Análisis Matemático II",
+        "creditos": 10,
+        "categoria": "Materias Obligatorias",
+        "level": 2,
+        "correlativas": "CBC"
+    },
+    {
+        "id": "AED",
+        "materia": "Algorítmos y Estructuras de Datos",
+        "creditos": 15,
+        "categoria": "Materias Obligatorias",
+        "level": 2,
+        "correlativas": "AL IP"
+    },
+    {
+        "id": "TDA",
+        "materia": "Técnicas de Diseño de Algoritmos",
+        "creditos": 10,
+        "categoria": "Materias Obligatorias",
+        "level": 3,
+        "correlativas": "AED"
+    },
+    {
+        "id": "SD",
+        "materia": "Sistemas Digitales",
+        "creditos": 5,
+        "categoria": "Materias Obligatorias",
+        "level": 3,
+        "correlativas": "IP"
+    },
+    {
+        "id": "PP",
+        "materia": "Paradigmas de Programación",
+        "creditos": 10,
+        "categoria": "Materias Obligatorias",
+        "level": 3,
+        "correlativas": "AED"
+    },
+    {
+        "id": "LFA",
+        "materia": "Lenguajes Formales, Autómatas y Computabilidad",
+        "creditos": 5,
+        "categoria": "Materias Obligatorias",
+        "level": 4,
+        "correlativas": "AED"
+    },
+    {
+        "id": "OC",
+        "materia": "Arquitectura y Organización de Computadores",
+        "creditos": 10,
+        "categoria": "Materias Obligatorias",
+        "level": 4,
+        "correlativas": "SD"
+    },
+    {
+        "id": "IS",
+        "materia": "Ingeniería de Software",
+        "creditos": 10,
+        "categoria": "Materias Obligatorias",
+        "level": 4,
+        "correlativas": "PP"
+    },
+    {
+      "id": "ALC",
+      "materia": "Álgebra Lineal computacional",
+      "creditos": 10,
+      "categoria": "Materias Obligatorias",
+      "level": 5,
+      "correlativas": "AED"
+    },
+    {
+      "id": "CC",
+      "materia": "Complejidad Computacional",
+      "creditos": 5,
+      "categoria": "Materias Obligatorias",
+      "level": 5,
+      "correlativas": "TDA LFA"
+    },
+    {
+      "id": "SO",
+      "materia": "Sistemas Operativos",
+      "creditos": 10,
+      "categoria": "Materias Obligatorias",
+      "level": 5,
+      "correlativas": "OC"
+    },
+    {
+      "id": "EC",
+      "materia": "Estadística Computacional",
+      "creditos": 10,
+      "categoria": "Materias Obligatorias",
+      "level": 6,
+      "correlativas": "ALC AM"
+    },
+    {
+      "id": "ARI",
+      "materia": "Almacenamiento y Recuperación de Información",
+      "creditos": 10,
+      "categoria": "Materias Obligatorias",
+      "level": 6,
+      "correlativas": "IS"
+    },
+    {
+      "id": "RCD",
+      "materia": "Redes de Comunicaciones y Cómputo Distribuido",
+      "creditos": 10,
+      "categoria": "Materias Obligatorias",
+      "level": 7,
+      "correlativas": "AOC TDA EC"
+    },
+    {
+      "id": "PCP",
+      "materia": "Programación Concurrente y Paralela",
+      "creditos": 10,
+      "categoria": "Materias Obligatorias",
+      "level": 7,
+      "correlativas": "RCD"
+    },
+    {
+      "id": "STS",
+      "materia": "Seminario sobre Tecnología y Sociedad",
+      "creditos": 0,
+      "categoria": "Materias Obligatorias",
+      "level": 8,
+      "requiere":160,
+      "requiereCBC": true
+    },
+    {
+      "id": "TL",
+      "materia": "Tesis de Licenciatura",
+      "creditos": 15,
+      "level": 8,
+      "requiere": 160,
+      "requiereCBC": true,
+      "categoria": "Fin de Carrera (Obligatorio)"
+    }
+]

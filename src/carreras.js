@@ -41,11 +41,37 @@ export const CARRERAS = [
       { nombre: "Bioquímica Industrial", colorScheme: "orientacion5" },
       { nombre: "Bioquímica Legal y Forense", colorScheme: "orientacion6" },
     ],
-
+    dependencia_final_y_cursada_separado: true,
     creditos: {
       total: 42,
       electivas: 0
     }
+  },
+  {
+    id: "ciencias-de-computacion",
+    link: "https://computacion.dc.uba.ar/plan-de-estudios-2023/",
+    ano: 2023,
+    graph: require("./data/ciencias-de-computacion-2023.json"),
+    creditos: {
+      total: 195,
+      electivas: 20,    
+      checkbox: [
+        {
+          nombre: "Práctica Social Educativa",
+          nombrecorto: "Práctica Social",
+          color: "habilitadas",
+          bg: COLORS.habilitadas[50],
+        }
+      ],
+      materias: [
+        {
+          id: "TL",
+          nombrecorto: "Tesis",
+          bg: COLORS.findecarrera[50],
+          color: "findecarrera",
+        },
+      ],
+    },
   },
   {
     id: "sistemasviejo",
@@ -655,6 +681,11 @@ export const PLANES = [
     nombrecorto: "Bioquímica",
     planes: ["bioquimica"],
   },
+  // {
+  //   nombre: "Ciencias de la Computación",
+  //   nombrecorto: "Computación",
+  //   planes: ["ciencias-de-computacion"],
+  // },
   // {
   //   nombre: "Ingeniería Civil",
   //   nombrecorto: "Civil",

@@ -1,4 +1,4 @@
-import { ScaleFade, Flex, Box, useColorModeValue } from "@chakra-ui/react";
+import { ScaleFade, Flex, Box, useColorModeValue, Switch } from "@chakra-ui/react";
 import React from "react";
 import { GraphContext, UserContext } from "../../MapContext";
 import MateriaDisplay from "./MateriaDisplay";
@@ -12,7 +12,7 @@ import UserMenu from "./UserMenu";
 //  un dropdown para elegir las carrera
 const Header = () => {
   const { logged } = React.useContext(UserContext);
-  const { displayedNode } = React.useContext(GraphContext);
+  const { displayedNode, changeMostrarRequisitosFinal} = React.useContext(GraphContext);
   const CommonProps = {
     height: { base: "8.7rem", md: "4.5rem" },
     bg: useColorModeValue("headerbg", "headerbgdark"),
@@ -34,6 +34,10 @@ const Header = () => {
     m: 0,
   };
 
+  const handleSwitchChange = (e) => {
+    changeMostrarRequisitosFinal(e.target.checked);
+  };
+
   return (
     <Box {...CommonProps}>
       <ScaleFade in={displayedNode} transition={{ enter: { delay: 0.0015 } }}>
@@ -48,6 +52,8 @@ const Header = () => {
       {!displayedNode && (
         <Flex {...CommonProps} {...(!displayedNode && FlexProps)}>
           {logged ? <UserMenu /> : <PadronInput />}
+          {/* TODO: Asegurar de testearlo bien */}
+          {/* <Switch onChange={handleSwitchChange}>Requisitos Final</Switch>           */}
           <DropdownCarreras />
         </Flex>
       )}

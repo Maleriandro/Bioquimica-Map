@@ -145,11 +145,26 @@ const Graph = (userContext) => {
     const edges = user.carrera.graph.flatMap((n) => {
       let e = [];
 
-      
+      let correlativasAUsar
 
-      if (n["correlativa-cursada"]) {
-        n["correlativa-cursada"].split(" ").forEach((c) => {
-          let [tipo, id] = c.split(":");
+      
+      if (user.carrera.dependencia_final_y_cursada_separado) {        
+        correlativasAUsar = user.muestraRequisitosFinal ? "correlativa-rendir" : "correlativa-cursada";
+      } else {
+        correlativasAUsar = "correlativas";
+      }
+
+
+      if (n[correlativasAUsar]) {
+        n[correlativasAUsar].split(" ").forEach((c) => {
+
+          let tipo = "F";
+          let id;
+          if (user.carrera.dependencia_final_y_cursada_separado) {
+            [tipo, id] = c.split(":");
+          } else { 
+            id = c;
+          }
 
           e.push({
             from: id,
@@ -172,7 +187,7 @@ const Graph = (userContext) => {
     // y despues la usamos para chequear contra la carrera de la network
     const key = user.carrera.id;
     return { nodes, edges, groups, key };
-  }, [user.carrera.graph, user.carrera.id]);
+  }, [user.carrera.graph, user.carrera.id, user.muestraRequisitosFinal, user.carrera.dependencia_final_y_cursada_separado]);
 
   // Cuando cambia la carrera, poblamos el nuevo grafo con lo que hay en la DB
   // (o, simplemente aprobamos el CBC si el usuario no tenia nada)
@@ -239,7 +254,7 @@ const Graph = (userContext) => {
     // Solo queremos poblar el grafo cuando el usuario cambia de carrera
     // o cuando el usuario se loguea y cambia el padron
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [user.padron, graph.key, network]);
+  }, [user.padron, graph.key, network, user.mostrarRequisitosFinal]);
 
   // Funcion importantisimaaaa, recorre todos los nodos y los actualiza a todos
   // Se llama casi siempre que pasa algo.
@@ -279,6 +294,8 @@ const Graph = (userContext) => {
   // (por ej: se muestran / ocultan las electivas, o se le setea el cuatrimestre a una materia)
   const actualizarNiveles = () => {
     // A la izq de todo, el CBC. Eso es constante
+
+    console.log(nodes.get()[0])
 
     const toUpdate = [];
     let lastLevel = Math.max(...getters.AllShown().map((n) => n.level));
@@ -345,6 +362,9 @@ const Graph = (userContext) => {
 
     // Le tiramos un centro a visjs y le pedimos que redibuje
     network.body.emitter.emit("_dataChanged");
+
+    
+    console.log(nodes.get()[0])
   };
 
   // Guarda el "mapa" en la base de datos, con toda su metadata:
@@ -362,6 +382,21 @@ const Graph = (userContext) => {
       .map((c) => c.nombre);
     return saveUserGraph(user, materias, checkboxes, optativas, aplazos);
   };
+
+  const changeMostrarRequisitosFinal = (mostrarRequisitosFinal) => {
+    //Cambiar user.muestraRequisitosFinal
+
+    // const newUser = { ...user, muestraRequisitosFinal: mostrarRequisitosFinal };
+    // setUser(newUser);
+    user.muestraRequisitosFinal = mostrarRequisitosFinal;
+
+    // user.muestraRequisitosFinal = mostrarRequisitosFinal;
+
+    actualizar();
+    actualizarNiveles();
+
+    
+  }
 
   ///
   // Interfaz de la UI con los cambios del usuario (carrera, orientacion, findecarrera)
@@ -1157,6 +1192,7 @@ const Graph = (userContext) => {
     optativas,
     user.orientacion?.nombre,
     user.finDeCarrera?.id,
+    // user.muestraRequisitosFinal
   ]);
 
   return {
@@ -1169,6 +1205,7 @@ const Graph = (userContext) => {
     setNetwork,
     saveGraph,
     restartGraphCuatris,
+    changeMostrarRequisitosFinal,
     changeCarrera,
     changeOrientacion,
     changeFinDeCarrera,

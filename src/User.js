@@ -18,6 +18,7 @@ const initialUser = {
   finDeCarrera: null,
   allLogins: [],
   maps: [],
+  muestraRequisitosFinal: false,
 };
 
 const Login = () => {
