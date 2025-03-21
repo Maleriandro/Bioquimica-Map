@@ -47,7 +47,7 @@
     "creditos": 0,
     "categoria": "CBC",
     "level": 0,
-    "correlativas": "CBC28-CBC27-CBC3-CBC5-CBC24-CBC40"
+    "correlativas": "CBC28 CBC27 CBC3 CBC5 CBC24 CBC40"
   },
   {
     "id": "81.01",
@@ -109,7 +109,7 @@
     "id": "81.04",
     "materia": "Probabilidad y Estadística B",
     "creditos": 6,
-    "correlativas": "81.01-81.02",
+    "correlativas": "81.01 81.02",
     "categoria": "Materias Obligatorias",
     "level": 3
   },
@@ -117,7 +117,7 @@
     "id": "95.58",
     "materia": "Organización de Datos",
     "creditos": 6,
-    "correlativas": "95.57-95.15",
+    "correlativas": "95.57 95.15",
     "categoria": "Materias Obligatorias",
     "level": 3
   },
@@ -133,7 +133,7 @@
     "id": "91.41",
     "materia": "Economía de las Organizaciones",
     "creditos": 4,
-    "correlativas": "81.04-91.39",
+    "correlativas": "81.04 91.39",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -149,7 +149,7 @@
     "id": "95.20",
     "materia": "Métodos y Modelos en la Ingeniería de Software I",
     "creditos": 6,
-    "correlativas": "95.02-95.58",
+    "correlativas": "95.02 95.58",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -157,7 +157,7 @@
     "id": "95.08",
     "materia": "Taller de Programación",
     "creditos": 4,
-    "correlativas": "95.02-95.57",
+    "correlativas": "95.02 95.57",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -165,7 +165,7 @@
     "id": "91.04",
     "materia": "Modelos y Optimización I",
     "creditos": 6,
-    "correlativas": "81.01-81.02-81.11-95.15",
+    "correlativas": "81.01 81.02 81.11 95.15",
     "categoria": "Materias Obligatorias",
     "level": 5
   },
@@ -173,7 +173,7 @@
     "id": "91.42",
     "materia": "Administración de las Organizaciones",
     "creditos": 4,
-    "correlativas": "91.41-95.20",
+    "correlativas": "91.41 95.20",
     "categoria": "Materias Obligatorias",
     "level": 5
   },
@@ -197,7 +197,7 @@
     "id": "91.05",
     "materia": "Modelos y Optimización II",
     "creditos": 4,
-    "correlativas": "81.04-91.04",
+    "correlativas": "81.04 91.04",
     "categoria": "Materias Obligatorias",
     "level": 6
   },
@@ -205,7 +205,7 @@
     "id": "95.24",
     "materia": "Administración y Control de Proyectos Informáticos I",
     "creditos": 6,
-    "correlativas": "91.42-95.21",
+    "correlativas": "91.42 95.21",
     "categoria": "Materias Obligatorias",
     "level": 6
   },
@@ -221,7 +221,7 @@
     "id": "95.59",
     "materia": "Diseño Operación y Gestión de Servicios Informáticos",
     "creditos": 4,
-    "correlativas": "91.42-95.21",
+    "correlativas": "91.42 95.21",
     "categoria": "Materias Obligatorias",
     "level": 6
   },
@@ -229,7 +229,7 @@
     "id": "95.60",
     "materia": "Redes y Aplicaciones Distribuidas",
     "creditos": 6,
-    "correlativas": "95.05-95.03",
+    "correlativas": "95.05 95.03",
     "categoria": "Materias Obligatorias",
     "level": 6
   },
@@ -280,14 +280,14 @@
     "id": "95.04",
     "materia": "Análisis Numérico I",
     "creditos": 6,
-    "correlativas": "81.01-81.02-95.14",
+    "correlativas": "81.01 81.02 95.14",
     "categoria": "Materias Electivas"
   },
   {
     "id": "95.06",
     "materia": "Teoría de Algoritmos I",
     "creditos": 6,
-    "correlativas": "81.11-95.15",
+    "correlativas": "81.11 95.15",
     "categoria": "Materias Electivas"
   },
   {
@@ -301,7 +301,7 @@
     "id": "95.19",
     "materia": "Simulación",
     "creditos": 6,
-    "correlativas": "81.04-95.15",
+    "correlativas": "81.04 95.15",
     "categoria": "Materias Electivas"
   },
   {
@@ -350,7 +350,7 @@
     "id": "95.63",
     "materia": "Desarrollo de Aplicaciones Mainframe",
     "creditos": 4,
-    "correlativas": "95.05-95.15",
+    "correlativas": "95.05 95.15",
     "categoria": "Materias Electivas"
   },
   {
@@ -399,7 +399,7 @@
     "id": "95.69",
     "materia": "Seminario de Sistemas de Información y Gestión",
     "creditos": 4,
-    "correlativas": "91.42-95.21",
+    "correlativas": "91.42 95.21",
     "categoria": "Materias Electivas"
   },
   {
@@ -427,7 +427,7 @@
     "id": "95.61",
     "materia": "Trabajo Profesional de Licenciatura en Análisis de Sistemas",
     "creditos": 12,
-    "correlativas": "95.24-95.59-95.60",
+    "correlativas": "95.24 95.59 95.60",
     "categoria": "Fin de Carrera (Obligatorio)"
   }
 ]

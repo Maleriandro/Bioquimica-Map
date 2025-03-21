@@ -47,7 +47,7 @@
     "creditos": 0,
     "categoria": "CBC",
     "level": 0,
-    "correlativas": "CBC28-CBC27-CBC3-CBC5-CBC24-CBC40"
+    "correlativas": "CBC28 CBC27 CBC3 CBC5 CBC24 CBC40"
   },
   {
     "id": "61.03",
@@ -85,7 +85,7 @@
     "id": "62.04",
     "materia": "Física II B",
     "creditos": 6,
-    "correlativas": "61.03-62.01",
+    "correlativas": "61.03 62.01",
     "categoria": "Materias Obligatorias",
     "level": 2
   },
@@ -109,7 +109,7 @@
     "id": "75.12",
     "materia": "Análisis Numérico I",
     "creditos": 6,
-    "correlativas": "61.03-61.08-75.01",
+    "correlativas": "61.03 61.08 75.01",
     "categoria": "Materias Obligatorias",
     "level": 3
   },
@@ -117,7 +117,7 @@
     "id": "76.45",
     "materia": "Termodinámica de los Procesos",
     "creditos": 10,
-    "correlativas": "62.01-63.02",
+    "correlativas": "62.01 63.02",
     "categoria": "Materias Obligatorias",
     "level": 3
   },
@@ -133,7 +133,7 @@
     "id": "61.14",
     "materia": "Matemática Especial para Ingeniería Química",
     "creditos": 8,
-    "correlativas": "61.03-61.08",
+    "correlativas": "61.03 61.08",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -157,7 +157,7 @@
     "id": "63.15",
     "materia": "Química Analítica Instrumental",
     "creditos": 8,
-    "correlativas": "63.13-63.14-62.04",
+    "correlativas": "63.13 63.14 62.04",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -165,7 +165,7 @@
     "id": "65.48",
     "materia": "Laboratorio de Instalaciones Eléctricas",
     "creditos": 4,
-    "correlativas": "62.04-76.46",
+    "correlativas": "62.04 76.46",
     "categoria": "Materias Obligatorias",
     "level": 5
   },
@@ -173,7 +173,7 @@
     "id": "76.47",
     "materia": "Fenómenos de Transporte",
     "creditos": 10,
-    "correlativas": "76.46-61.14",
+    "correlativas": "76.46 61.14",
     "categoria": "Materias Obligatorias",
     "level": 5
   },
@@ -181,7 +181,7 @@
     "id": "76.48",
     "materia": "Evaluación de Propiedades Físicas",
     "creditos": 6,
-    "correlativas": "76.45-61.06",
+    "correlativas": "76.45 61.06",
     "categoria": "Materias Obligatorias",
     "level": 5
   },
@@ -189,7 +189,7 @@
     "id": "63.16",
     "materia": "Química Física",
     "creditos": 6,
-    "correlativas": "63.13-76.45-63.15",
+    "correlativas": "63.13 76.45 63.15",
     "categoria": "Materias Obligatorias",
     "level": 5
   },
@@ -214,7 +214,7 @@
     "id": "76.52",
     "materia": "Operaciones Unitarias de Transferencia de Materia",
     "creditos": 10,
-    "correlativas": "76.48-76.47",
+    "correlativas": "76.48 76.47",
     "categoria": "Materias Obligatorias",
     "level": 6
   },
@@ -230,7 +230,7 @@
     "id": "76.53",
     "materia": "Diseño de Reactores",
     "creditos": 10,
-    "correlativas": "76.49-63.16-75.12",
+    "correlativas": "76.49 63.16 75.12",
     "categoria": "Materias Obligatorias",
     "level": 7
   },
@@ -246,7 +246,7 @@
     "id": "76.56",
     "materia": "Instrumentación y Control de Plantas Químicas",
     "creditos": 10,
-    "correlativas": "76.49-76.52",
+    "correlativas": "76.49 76.52",
     "categoria": "Materias Obligatorias",
     "level": 8
   },
@@ -262,7 +262,7 @@
     "id": "76.58",
     "materia": "Emisiones de Contaminantes Químicos y Biológicos",
     "creditos": 4,
-    "correlativas": "76.52-76.55",
+    "correlativas": "76.52 76.55",
     "categoria": "Materias Obligatorias",
     "level": 8
   },
@@ -314,21 +314,21 @@
     "id": "67.58",
     "materia": "Intr. al Método de los Elementos Finitos",
     "creditos": 6,
-    "correlativas": "75.12-76.47",
+    "correlativas": "75.12 76.47",
     "categoria": "Materias Electivas"
   },
   {
     "id": "67.59",
     "materia": "Mecánica del Continuo",
     "creditos": 6,
-    "correlativas": "67.60-76.47",
+    "correlativas": "67.60 76.47",
     "categoria": "Materias Electivas"
   },
   {
     "id": "67.60",
     "materia": "Introducción al Análisis Tensorial",
     "creditos": 4,
-    "correlativas": "61.03-61.08",
+    "correlativas": "61.03 61.08",
     "categoria": "Materias Electivas"
   },
   {
@@ -342,7 +342,7 @@
     "id": "76.16",
     "materia": "Electroquímica",
     "creditos": 4,
-    "correlativas": "63.16-76.47",
+    "correlativas": "63.16 76.47",
     "categoria": "Materias Electivas"
   },
   {
@@ -384,7 +384,7 @@
     "id": "76.25",
     "materia": "Explotación de Yacimientos",
     "creditos": 8,
-    "correlativas": "62.04-76.46",
+    "correlativas": "62.04 76.46",
     "categoria": "Materias Electivas"
   },
   {
@@ -434,7 +434,7 @@
     "id": "76.32",
     "materia": "Preservación de Alimentos",
     "creditos": 6,
-    "correlativas": "76.49-76.52-76.55",
+    "correlativas": "76.49 76.52 76.55",
     "categoria": "Materias Electivas"
   },
   {
@@ -464,7 +464,7 @@
     "id": "76.60",
     "materia": "Laboratorio de Operaciones y Procesos",
     "creditos": 4,
-    "correlativas": "76.52-76.53-77.08",
+    "correlativas": "76.52 76.53 77.08",
     "categoria": "Materias Obligatorias",
     "level": 9
   },
@@ -472,7 +472,7 @@
     "id": "76.61",
     "materia": "Bioingeniería",
     "creditos": 6,
-    "correlativas": "76.52-76.53-76.55",
+    "correlativas": "76.52 76.53 76.55",
     "categoria": "Materias Obligatorias",
     "level": 9
   },
@@ -480,14 +480,14 @@
     "id": "76.64",
     "materia": "Tesis de Ingeniería Química",
     "creditos": 18,
-    "correlativas": "76.52-76.53",
+    "correlativas": "76.52 76.53",
     "categoria": "Fin de Carrera"
   },
   {
     "id": "76.59-76.62",
     "materia": "Trabajo Profesional de Ingeniería Química",
     "creditos": 12,
-    "correlativas": "76.52-76.53-76.56",
+    "correlativas": "76.52 76.53 76.56",
     "categoria": "Fin de Carrera"
   }
 ]

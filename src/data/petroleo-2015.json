@@ -47,7 +47,7 @@
     "creditos": 0,
     "categoria": "CBC",
     "level": 0,
-    "correlativas": "CBC66-CBC62-CBC3-CBC5-CBC24-CBC40"
+    "correlativas": "CBC66 CBC62 CBC3 CBC5 CBC24 CBC40"
   },
   {
     "id": "83.01",
@@ -85,7 +85,7 @@
     "id": "62.04",
     "materia": "Física II B",
     "creditos": 6,
-    "correlativas": "81.01-82.01",
+    "correlativas": "81.01 82.01",
     "categoria": "Materias Obligatorias",
     "level": 2
   },
@@ -149,7 +149,7 @@
     "id": "81.04",
     "materia": "Probabilidad y Estadística B",
     "creditos": 6,
-    "correlativas": "81.01-81.02",
+    "correlativas": "81.01 81.02",
     "categoria": "Materias Obligatorias",
     "level": 3
   },
@@ -173,7 +173,7 @@
     "id": "84.05",
     "materia": "Estática y Resistencia de Materiales",
     "creditos": 6,
-    "correlativas": "81.01-81.02-82.01-87.13",
+    "correlativas": "81.01 81.02 82.01 87.13",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -197,7 +197,7 @@
     "id": "79.05",
     "materia": "Geología del Petróleo",
     "creditos": 4,
-    "correlativas": "70.40-79.01",
+    "correlativas": "70.40 79.01",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -221,7 +221,7 @@
     "id": "95.13",
     "materia": "Métodos Matemáticos y Numéricos",
     "creditos": 6,
-    "correlativas": "62.04-84.05-95.01",
+    "correlativas": "62.04 84.05 95.01",
     "categoria": "Materias Obligatorias",
     "level": 5
   },
@@ -229,7 +229,7 @@
     "id": "79.18",
     "materia": "Propiedades de la Roca y los Fluidos de Reservorios",
     "creditos": 6,
-    "correlativas": "79.05-79.06",
+    "correlativas": "79.05 79.06",
     "categoria": "Materias Obligatorias",
     "level": 5
   },
@@ -245,7 +245,7 @@
     "id": "79.04",
     "materia": "Interpretación de Registros de Pozos",
     "creditos": 8,
-    "correlativas": "79.18-79.02",
+    "correlativas": "79.18 79.02",
     "categoria": "Materias Obligatorias",
     "level": 6
   },
@@ -277,7 +277,7 @@
     "id": "79.09",
     "materia": "Gas y Condensados",
     "creditos": 4,
-    "correlativas": "89.17-83.04",
+    "correlativas": "89.17 83.04",
     "categoria": "Materias Obligatorias",
     "level": 7
   },
@@ -285,7 +285,7 @@
     "id": "79.15",
     "materia": "Instalaciones de Producción",
     "creditos": 4,
-    "correlativas": "79.12-87.17-85.40",
+    "correlativas": "79.12 87.17 85.40",
     "categoria": "Materias Obligatorias",
     "level": 7
   },
@@ -293,7 +293,7 @@
     "id": "79.20",
     "materia": "Ensayos de Pozo",
     "creditos": 4,
-    "correlativas": "95.13-79.12",
+    "correlativas": "95.13 79.12",
     "categoria": "Materias Obligatorias",
     "level": 7
   },
@@ -317,7 +317,7 @@
     "id": "79.10",
     "materia": "Desarrollo de Yacimientos",
     "creditos": 6,
-    "correlativas": "79.15-79.19",
+    "correlativas": "79.15 79.19",
     "categoria": "Materias Obligatorias",
     "level": 8
   },
@@ -325,7 +325,7 @@
     "id": "79.22",
     "materia": "Simulación Numérica de Reservorios",
     "creditos": 6,
-    "correlativas": "79.19-89.17-95.13",
+    "correlativas": "79.19 89.17 95.13",
     "categoria": "Materias Obligatorias",
     "level": 8
   },
@@ -385,28 +385,28 @@
     "id": "81.05",
     "materia": "Análisis Matemático III A",
     "creditos": 6,
-    "correlativas": "81.01-81.02",
+    "correlativas": "81.01 81.02",
     "categoria": "Materias Electivas"
   },
   {
     "id": "82.07",
     "materia": "Física III B",
     "creditos": 4,
-    "correlativas": "81.02-62.04",
+    "correlativas": "81.02 62.04",
     "categoria": "Materias Electivas"
   },
   {
     "id": "89.19",
     "materia": "Transporte De Fluidos Por Tuberías",
     "creditos": 6,
-    "correlativas": "76.65-89.17",
+    "correlativas": "76.65 89.17",
     "categoria": "Materias Electivas"
   },
   {
     "id": "92.01",
     "materia": "Materiales Industriales I",
     "creditos": 6,
-    "correlativas": "84.05-83.01",
+    "correlativas": "84.05 83.01",
     "categoria": "Materias Electivas"
   },
   {

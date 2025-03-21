@@ -47,7 +47,7 @@
     "creditos": 0,
     "categoria": "CBC",
     "level": 0,
-    "correlativas": "CBC66-CBC62-CBC3-CBC90-CBC24-CBC40"
+    "correlativas": "CBC66 CBC62 CBC3 CBC90 CBC24 CBC40"
   },
   {
     "id": "AM2",
@@ -93,7 +93,7 @@
     "id": "PROBA",
     "materia": "Probabilidad y Estadística",
     "creditos": 6,
-    "correlativas": "AM2-SDC",
+    "correlativas": "AM2 SDC",
     "categoria": "Materias Obligatorias",
     "level": 2
   },
@@ -141,7 +141,7 @@
     "id": "MT",
     "materia": "Métodos Topográficos",
     "creditos": 6,
-    "correlativas": "IT-SROA",
+    "correlativas": "IT SROA",
     "categoria": "Materias Obligatorias",
     "level": 3
   },
@@ -149,7 +149,7 @@
     "id": "CC",
     "materia": "Cálculo de Compensación",
     "creditos": 4,
-    "correlativas": "IT-PROBA",
+    "correlativas": "IT PROBA",
     "categoria": "Materias Obligatorias",
     "level": 3
   },
@@ -181,7 +181,7 @@
     "id": "RT",
     "materia": "Relevamientos Topográficos",
     "creditos": 8,
-    "correlativas": "MT-CC",
+    "correlativas": "MT CC",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -189,7 +189,7 @@
     "id": "GGS",
     "materia": "Geodesia Geométrica y Satelital",
     "creditos": 4,
-    "correlativas": "GAMP-MT",
+    "correlativas": "GAMP MT",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -197,7 +197,7 @@
     "id": "FOT",
     "materia": "Fotogrametría",
     "creditos": 4,
-    "correlativas": "CAR-ICD",
+    "correlativas": "CAR ICD",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -205,7 +205,7 @@
     "id": "NMPH",
     "materia": "Normativa de Mensura y Propiedad Horizontal",
     "creditos": 4,
-    "correlativas": "DA-IT",
+    "correlativas": "DA IT",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -213,7 +213,7 @@
     "id": "EYM",
     "materia": "Electricidad y Magnetismo",
     "creditos": 6,
-    "correlativas": "AM2-FSP",
+    "correlativas": "AM2 FSP",
     "categoria": "Materias Obligatorias",
     "level": 5
   },
@@ -221,7 +221,7 @@
     "id": "GTG",
     "materia": "Georreferenciación de Trabajos Topográficos y Geodésicos",
     "creditos": 8,
-    "correlativas": "RT-GGS-CAR",
+    "correlativas": "RT GGS CAR",
     "categoria": "Materias Obligatorias",
     "level": 5
   },
@@ -237,7 +237,7 @@
     "id": "ALA",
     "materia": "Aplicación Legal de la Agrimensura",
     "creditos": 4,
-    "correlativas": "NMPH-EO",
+    "correlativas": "NMPH EO",
     "categoria": "Materias Obligatorias",
     "level": 5
   },
@@ -269,7 +269,7 @@
     "id": "MNS",
     "materia": "Mensuras",
     "creditos": 4,
-    "correlativas": "RT-NMPH",
+    "correlativas": "RT NMPH",
     "categoria": "Materias Obligatorias",
     "level": 6
   },
@@ -277,7 +277,7 @@
     "id": "TAG",
     "materia": "Teledetección para Agrimensura",
     "creditos": 4,
-    "correlativas": "CAR-EYM",
+    "correlativas": "CAR EYM",
     "categoria": "Materias Obligatorias",
     "level": 6
   },
@@ -301,7 +301,7 @@
     "id": "MA",
     "materia": "Mensuras Aplicadas",
     "creditos": 6,
-    "correlativas": "GTG-MNS-ALA",
+    "correlativas": "GTG MNS ALA",
     "categoria": "Materias Obligatorias",
     "level": 7
   },
@@ -309,7 +309,7 @@
     "id": "VAL",
     "materia": "Valuaciones",
     "creditos": 3,
-    "correlativas": "CAT-EC",
+    "correlativas": "CAT EC",
     "categoria": "Materias Obligatorias",
     "level": 7
   },
@@ -333,7 +333,7 @@
     "id": "GE",
     "materia": "Geoestadística",
     "creditos": 4,
-    "correlativas": "CC-ICD",
+    "correlativas": "CC ICD",
     "categoria": "Materias Electivas"
   },
   {
@@ -375,7 +375,7 @@
     "id": "MG",
     "materia": "Microgeodesia",
     "creditos": 4,
-    "correlativas": "GAMP-RT",
+    "correlativas": "GAMP RT",
     "categoria": "Materias Electivas"
   },
   {
@@ -396,7 +396,7 @@
     "id": "GF",
     "materia": "Geodesia Física",
     "creditos": 4,
-    "correlativas": "EYM-GGS",
+    "correlativas": "EYM GGS",
     "categoria": "Materias Electivas"
   },
   {
@@ -445,28 +445,28 @@
     "id": "IA",
     "materia": "Introducción a Inteligencia Artificial",
     "creditos": 3,
-    "correlativas": "PE-ICD",
+    "correlativas": "PE ICD",
     "categoria": "Materias Electivas"
   },
   {
     "id": "AD",
     "materia": "Análisis de Datos",
     "creditos": 3,
-    "correlativas": "PE-ICD",
+    "correlativas": "PE ICD",
     "categoria": "Materias Electivas"
   },
   {
     "id": "AM",
     "materia": "Aprendizaje de Máquina",
     "creditos": 3,
-    "correlativas": "AD-IA",
+    "correlativas": "AD IA",
     "categoria": "Materias Electivas"
   },
   {
     "id": "AMP",
     "materia": "Aprendizaje de Máquina Profundo",
     "creditos": 3,
-    "correlativas": "AD-IA",
+    "correlativas": "AD IA",
     "categoria": "Materias Electivas"
   },
   {

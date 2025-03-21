@@ -47,7 +47,7 @@
     "creditos": 0,
     "categoria": "CBC",
     "level": 0,
-    "correlativas": "CBC66-CBC62-CBC3-CBC5-CBC24-CBC40"
+    "correlativas": "CBC66 CBC62 CBC3 CBC5 CBC24 CBC40"
   },
   {
     "id": "81.01",
@@ -101,7 +101,7 @@
     "id": "82.02",
     "materia": "Física II",
     "creditos": 8,
-    "correlativas": "81.01-82.01",
+    "correlativas": "81.01 82.01",
     "categoria": "Materias Obligatorias",
     "level": 2
   },
@@ -125,7 +125,7 @@
     "id": "81.05",
     "materia": "Análisis Matemático III A",
     "creditos": 6,
-    "correlativas": "81.01-81.02",
+    "correlativas": "81.01 81.02",
     "categoria": "Materias Obligatorias",
     "level": 3
   },
@@ -141,7 +141,7 @@
     "id": "85.02",
     "materia": "Electrotecnia",
     "creditos": 8,
-    "correlativas": "82.02-85.01",
+    "correlativas": "82.02 85.01",
     "categoria": "Materias Obligatorias",
     "level": 3
   },
@@ -149,7 +149,7 @@
     "id": "95.04",
     "materia": "Análisis Numérico I",
     "creditos": 6,
-    "correlativas": "81.01-81.02-95.01",
+    "correlativas": "81.01 81.02 95.01",
     "categoria": "Materias Obligatorias",
     "level": 3
   },
@@ -157,7 +157,7 @@
     "id": "84.05",
     "materia": "Estática y Resistencia de Materiales",
     "creditos": 6,
-    "correlativas": "81.01-87.13-82.01",
+    "correlativas": "81.01 87.13 82.01",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -173,7 +173,7 @@
     "id": "82.03",
     "materia": "Física III",
     "creditos": 6,
-    "correlativas": "81.02-82.02-83.01",
+    "correlativas": "81.02 82.02 83.01",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -181,7 +181,7 @@
     "id": "85.03",
     "materia": "Teoría de Circuitos y Sistemas",
     "creditos": 6,
-    "correlativas": "81.05-85.02",
+    "correlativas": "81.05 85.02",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -197,7 +197,7 @@
     "id": "85.08",
     "materia": "Tecnología de Materiales Eléctricos",
     "creditos": 6,
-    "correlativas": "82.03-85.05",
+    "correlativas": "82.03 85.05",
     "categoria": "Materias Obligatorias",
     "level": 5
   },
@@ -213,7 +213,7 @@
     "id": "85.04",
     "materia": "Campos Electromagnéticos",
     "creditos": 6,
-    "correlativas": "81.05-85.02",
+    "correlativas": "81.05 85.02",
     "categoria": "Materias Obligatorias",
     "level": 5
   },
@@ -221,7 +221,7 @@
     "id": "85.09",
     "materia": "Diagnósticos Eléctricos y Ensayos",
     "creditos": 4,
-    "correlativas": "81.03-85.08-85.06",
+    "correlativas": "81.03 85.08 85.06",
     "categoria": "Materias Obligatorias",
     "level": 6
   },
@@ -229,7 +229,7 @@
     "id": "85.16",
     "materia": "Electrónica de Potencia",
     "creditos": 6,
-    "correlativas": "82.03-85.06-86.33",
+    "correlativas": "82.03 85.06 86.33",
     "categoria": "Materias Obligatorias",
     "level": 6
   },
@@ -237,7 +237,7 @@
     "id": "85.07",
     "materia": "Máquinas Eléctricas II",
     "creditos": 6,
-    "correlativas": "85.03-85.06",
+    "correlativas": "85.03 85.06",
     "categoria": "Materias Obligatorias",
     "level": 6
   },
@@ -261,7 +261,7 @@
     "id": "97.02",
     "materia": "Seguridad Ambiental y del Trabajo B",
     "creditos": 4,
-    "correlativas": "85.02-83.01",
+    "correlativas": "85.02 83.01",
     "categoria": "Materias Obligatorias",
     "level": 7
   },
@@ -269,7 +269,7 @@
     "id": "85.12",
     "materia": "Sistemas Eléctricos de Potencia",
     "creditos": 6,
-    "correlativas": "85.04-85.07",
+    "correlativas": "85.04 85.07",
     "categoria": "Materias Obligatorias",
     "level": 7
   },
@@ -285,7 +285,7 @@
     "id": "85.11",
     "materia": "Instalaciones de Baja Tensión y Luminotecnia",
     "creditos": 4,
-    "correlativas": "85.09-97.02",
+    "correlativas": "85.09 97.02",
     "categoria": "Materias Obligatorias",
     "level": 8
   },
@@ -327,7 +327,7 @@
     "id": "85.10",
     "materia": "Construcciones Electromecánicas",
     "creditos": 6,
-    "correlativas": "85.09-87.06",
+    "correlativas": "85.09 87.06",
     "categoria": "Materias Obligatorias",
     "level": 9
   },
@@ -343,14 +343,14 @@
     "id": "82.04",
     "materia": "Mecánica Racional",
     "creditos": 4,
-    "correlativas": "81.05-82.01",
+    "correlativas": "81.05 82.01",
     "categoria": "Materias Electivas"
   },
   {
     "id": "86.01",
     "materia": "Técnica Digital",
     "creditos": 6,
-    "correlativas": "81.02-95.01",
+    "correlativas": "81.02 95.01",
     "categoria": "Materias Electivas"
   },
   {
@@ -364,7 +364,7 @@
     "id": "86.15",
     "materia": "Robótica",
     "creditos": 6,
-    "correlativas": "82.04-86.08",
+    "correlativas": "82.04 86.08",
     "categoria": "Materias Electivas"
   },
   {
@@ -385,7 +385,7 @@
     "id": "91.36",
     "materia": "Gestión de la Calidad",
     "creditos": 4,
-    "correlativas": "81.03-85.09",
+    "correlativas": "81.03 85.09",
     "categoria": "Materias Electivas"
   },
   {
@@ -400,7 +400,7 @@
     "id": "85.18",
     "materia": "Accionamientos Eléctricos",
     "creditos": 4,
-    "correlativas": "85.07-85.16",
+    "correlativas": "85.07 85.16",
     "categoria": "Materias Electivas"
   },
   {
@@ -421,7 +421,7 @@
     "id": "85.21",
     "materia": "Uso Eficiente de la Energía Eléctrica",
     "creditos": 4,
-    "correlativas": "85.06-85.11",
+    "correlativas": "85.06 85.11",
     "categoria": "Materias Electivas"
   },
   {

@@ -47,7 +47,7 @@
     "creditos": 0,
     "categoria": "CBC",
     "level": 0,
-    "correlativas": "CBC66-CBC62-CBC3-CBC5-CBC24-CBC40"
+    "correlativas": "CBC66 CBC62 CBC3 CBC5 CBC24 CBC40"
   },
   {
     "id": "61.03",
@@ -93,7 +93,7 @@
     "id": "62.04",
     "materia": "Física II B",
     "creditos": 6,
-    "correlativas": "61.03-62.01",
+    "correlativas": "61.03 62.01",
     "categoria": "Materias Obligatorias",
     "level": 2
   },
@@ -109,7 +109,7 @@
     "id": "75.12",
     "materia": "Análisis Numérico I",
     "creditos": 6,
-    "correlativas": "61.03-61.08-75.01",
+    "correlativas": "61.03 61.08 75.01",
     "categoria": "Materias Obligatorias",
     "level": 3
   },
@@ -125,7 +125,7 @@
     "id": "76.45",
     "materia": "Termodinámica de los Procesos",
     "creditos": 10,
-    "correlativas": "62.01-63.02",
+    "correlativas": "62.01 63.02",
     "categoria": "Materias Obligatorias",
     "level": 3
   },
@@ -133,7 +133,7 @@
     "id": "61.14",
     "materia": "Matemática Especial para Ingeniería Química",
     "creditos": 8,
-    "correlativas": "61.03-61.08",
+    "correlativas": "61.03 61.08",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -141,7 +141,7 @@
     "id": "65.43",
     "materia": "Ingeniería de las Instalaciones I",
     "creditos": 6,
-    "correlativas": "62.04-76.46",
+    "correlativas": "62.04 76.46",
     "categoria": "Materias Obligatorias",
     "level": 7
   },
@@ -173,7 +173,7 @@
     "id": "63.05",
     "materia": "Química Analítica",
     "creditos": 8,
-    "correlativas": "63.14-62.04",
+    "correlativas": "63.14 62.04",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -181,7 +181,7 @@
     "id": "76.03",
     "materia": "Operaciones I",
     "creditos": 10,
-    "correlativas": "61.14-76.46",
+    "correlativas": "61.14 76.46",
     "categoria": "Materias Obligatorias",
     "level": 5
   },
@@ -189,7 +189,7 @@
     "id": "63.07",
     "materia": "Química Física II",
     "creditos": 6,
-    "correlativas": "63.13-76.45",
+    "correlativas": "63.13 76.45",
     "categoria": "Materias Obligatorias",
     "level": 5
   },
@@ -245,7 +245,7 @@
     "id": "FYB1",
     "materia": "Legislación Alimentaria",
     "creditos": 2,
-    "correlativas": "CEX2-FYB2",
+    "correlativas": "CEX2 FYB2",
     "categoria": "Materias Obligatorias",
     "level": 8
   },
@@ -253,7 +253,7 @@
     "id": "76.08",
     "materia": "Ingeniería de la Reacciones Químicas",
     "creditos": 8,
-    "correlativas": "63.07-76.05",
+    "correlativas": "63.07 76.05",
     "categoria": "Materias Obligatorias",
     "level": 7
   },
@@ -261,7 +261,7 @@
     "id": "CEX1",
     "materia": "Fundamentos de la Preservación de Alimentos I",
     "creditos": 6,
-    "correlativas": "76.12-76.04-76.05",
+    "correlativas": "76.12 76.04 76.05",
     "categoria": "Materias Obligatorias",
     "level": 8
   },
@@ -269,7 +269,7 @@
     "id": "76.43",
     "materia": "Instrumentación y Control",
     "creditos": 6,
-    "correlativas": "76.04-76.05",
+    "correlativas": "76.04 76.05",
     "categoria": "Materias Obligatorias",
     "level": 8
   },
@@ -285,7 +285,7 @@
     "id": "CEX4",
     "materia": "Tecnología de Alimentos I",
     "creditos": 6,
-    "correlativas": "CEX1-63.05",
+    "correlativas": "CEX1 63.05",
     "categoria": "Materias Obligatorias",
     "level": 9
   },
@@ -293,7 +293,7 @@
     "id": "76.41",
     "materia": "Biotecnología",
     "creditos": 4,
-    "correlativas": "76.08-76.12",
+    "correlativas": "76.08 76.12",
     "categoria": "Materias Obligatorias",
     "level": 9
   },
@@ -309,7 +309,7 @@
     "id": "CEX5",
     "materia": "Tecnología de Alimentos II",
     "creditos": 4,
-    "correlativas": "CEX1-63.05",
+    "correlativas": "CEX1 63.05",
     "categoria": "Materias Obligatorias",
     "level": 9
   },
@@ -339,7 +339,7 @@
     "id": "CEX7",
     "materia": "Tecnología de Alimentos III",
     "creditos": 4,
-    "correlativas": "CEX1-63.05",
+    "correlativas": "CEX1 63.05",
     "categoria": "Materias Electivas"
   },
   {
@@ -353,7 +353,7 @@
     "id": "CEX8",
     "materia": "Análisis avanzado de Alimentos",
     "creditos": 8,
-    "correlativas": "CEX3-63.05",
+    "correlativas": "CEX3 63.05",
     "categoria": "Materias Electivas"
   },
   {
@@ -367,21 +367,21 @@
     "id": "71.31",
     "materia": "Organización de la Producción",
     "creditos": 6,
-    "correlativas": "CEX3-71.55",
+    "correlativas": "CEX3 71.55",
     "categoria": "Materias Electivas"
   },
   {
     "id": "71.33",
     "materia": "Comercialización",
     "creditos": 4,
-    "correlativas": "CEX3-71.55",
+    "correlativas": "CEX3 71.55",
     "categoria": "Materias Electivas"
   },
   {
     "id": "71.43",
     "materia": "Logística Integral",
     "creditos": 4,
-    "correlativas": "CEX3-71.55",
+    "correlativas": "CEX3 71.55",
     "categoria": "Materias Electivas"
   },
   {
@@ -395,7 +395,7 @@
     "id": "72.14",
     "materia": "Diseño de Producto",
     "creditos": 4,
-    "correlativas": "CEX3-71.55",
+    "correlativas": "CEX3 71.55",
     "categoria": "Materias Electivas"
   },
   {

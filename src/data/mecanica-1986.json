@@ -47,7 +47,7 @@
     "creditos": 0,
     "categoria": "CBC",
     "level": 0,
-    "correlativas": "CBC28-CBC27-CBC3-CBC5-CBC24-CBC40"
+    "correlativas": "CBC28 CBC27 CBC3 CBC5 CBC24 CBC40"
   },
   {
     "id": "62.01",
@@ -77,7 +77,7 @@
     "id": "62.03",
     "materia": "Física II A",
     "creditos": 8,
-    "correlativas": "61.03-62.01",
+    "correlativas": "61.03 62.01",
     "categoria": "Materias Obligatorias",
     "level": 2
   },
@@ -101,7 +101,7 @@
     "id": "61.13",
     "materia": "Análisis Matemático III C",
     "creditos": 4,
-    "correlativas": "61.03-61.08",
+    "correlativas": "61.03 61.08",
     "categoria": "Materias Obligatorias",
     "level": 2
   },
@@ -125,7 +125,7 @@
     "id": "64.11",
     "materia": "Estabilidad I B",
     "creditos": 6,
-    "correlativas": "62.01-67.02",
+    "correlativas": "62.01 67.02",
     "categoria": "Materias Obligatorias",
     "level": 3
   },
@@ -133,7 +133,7 @@
     "id": "62.06",
     "materia": "Mecánica I",
     "creditos": 6,
-    "correlativas": "61.03-61.08-62.01",
+    "correlativas": "61.03 61.08 62.01",
     "categoria": "Materias Obligatorias",
     "level": 3
   },
@@ -149,7 +149,7 @@
     "id": "75.12",
     "materia": "Análisis Numérico I",
     "creditos": 6,
-    "correlativas": "61.03-61.08-75.01",
+    "correlativas": "61.03 61.08 75.01",
     "categoria": "Materias Obligatorias",
     "level": 3
   },
@@ -157,7 +157,7 @@
     "id": "64.12",
     "materia": "Estabilidad II B",
     "creditos": 8,
-    "correlativas": "61.03-61.08-64.11-67.13",
+    "correlativas": "61.03 61.08 64.11 67.13",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -173,7 +173,7 @@
     "id": "67.14",
     "materia": "Conocimiento de Materiales II",
     "creditos": 4,
-    "correlativas": "63.01-67.13",
+    "correlativas": "63.01 67.13",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -181,7 +181,7 @@
     "id": "67.04",
     "materia": "Termodinámica I A",
     "creditos": 8,
-    "correlativas": "61.08-62.03",
+    "correlativas": "61.08 62.03",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -197,7 +197,7 @@
     "id": "67.17",
     "materia": "Taller",
     "creditos": 4,
-    "correlativas": "67.07-67.11-67.14",
+    "correlativas": "67.07 67.11 67.14",
     "categoria": "Materias Obligatorias",
     "level": 5
   },
@@ -205,7 +205,7 @@
     "id": "67.15",
     "materia": "Tecnología Mecánica I",
     "creditos": 6,
-    "correlativas": "67.07-67.11",
+    "correlativas": "67.07 67.11",
     "categoria": "Materias Obligatorias",
     "level": 5
   },
@@ -229,7 +229,7 @@
     "id": "67.20",
     "materia": "Turbomáquinas",
     "creditos": 6,
-    "correlativas": "67.11-67.18",
+    "correlativas": "67.11 67.18",
     "categoria": "Materias Obligatorias",
     "level": 6
   },
@@ -253,7 +253,7 @@
     "id": "67.21",
     "materia": "Mediciones Físicas y Mecánicas",
     "creditos": 4,
-    "correlativas": "62.06-67.18",
+    "correlativas": "62.06 67.18",
     "categoria": "Materias Obligatorias",
     "level": 6
   },
@@ -261,7 +261,7 @@
     "id": "67.19",
     "materia": "Máquinas Alternativas",
     "creditos": 6,
-    "correlativas": "67.04-67.11",
+    "correlativas": "67.04 67.11",
     "categoria": "Materias Obligatorias",
     "level": 6
   },
@@ -277,7 +277,7 @@
     "id": "67.22",
     "materia": "Sistemas de Control",
     "creditos": 4,
-    "correlativas": "61.13-67.21",
+    "correlativas": "61.13 67.21",
     "categoria": "Materias Obligatorias",
     "level": 7
   },
@@ -309,7 +309,7 @@
     "id": "67.28",
     "materia": "Sistemas Hidráulicos y Neumáticos",
     "creditos": 4,
-    "correlativas": "66.03-67.18",
+    "correlativas": "66.03 67.18",
     "categoria": "Materias Obligatorias",
     "level": 8
   },
@@ -317,7 +317,7 @@
     "id": "67.24",
     "materia": "Proyecto de Instalaciones Industriales",
     "creditos": 6,
-    "correlativas": "65.06-67.18",
+    "correlativas": "65.06 67.18",
     "categoria": "Materias Obligatorias",
     "level": 9
   },
@@ -341,7 +341,7 @@
     "id": "62.07",
     "materia": "Mecánica II",
     "creditos": 4,
-    "correlativas": "61.13-62.06",
+    "correlativas": "61.13 62.06",
     "categoria": "Diseño Mecánico"
   },
   {
@@ -355,7 +355,7 @@
     "id": "67.45",
     "materia": "Sistemas de Control en Instalaciones Térmicas",
     "creditos": 4,
-    "correlativas": "67.22-67.33",
+    "correlativas": "67.22 67.33",
     "categoria": "Termomecánica"
   },
   {
@@ -376,14 +376,14 @@
     "id": "67.25",
     "materia": "Elementos de Máquinas",
     "creditos": 8,
-    "correlativas": "64.12-67.11",
+    "correlativas": "64.12 67.11",
     "categoria": "Diseño Mecánico"
   },
   {
     "id": "67.27",
     "materia": "Tecnología Mecánica II",
     "creditos": 6,
-    "correlativas": "67.15-67.17",
+    "correlativas": "67.15 67.17",
     "categoria": "Diseño Mecánico"
   },
   {
@@ -397,21 +397,21 @@
     "id": "67.29",
     "materia": "Proyecto de Máquinas",
     "creditos": 6,
-    "correlativas": "62.06-67.25-67.27-67.28",
+    "correlativas": "62.06 67.25 67.27 67.28",
     "categoria": "Diseño Mecánico"
   },
   {
     "id": "67.30",
     "materia": "Combustión",
     "creditos": 4,
-    "correlativas": "63.01-67.04",
+    "correlativas": "63.01 67.04",
     "categoria": "Termomecánica"
   },
   {
     "id": "67.33",
     "materia": "Tecnología del Calor",
     "creditos": 8,
-    "correlativas": "67.30-67.31",
+    "correlativas": "67.30 67.31",
     "categoria": "Termomecánica"
   },
   {
@@ -425,28 +425,28 @@
     "id": "67.34",
     "materia": "Proyecto de Instalaciones Térmicas",
     "creditos": 6,
-    "correlativas": "67.32-67.33",
+    "correlativas": "67.32 67.33",
     "categoria": "Termomecánica"
   },
   {
     "id": "67.32",
     "materia": "Tecnología del Frío",
     "creditos": 6,
-    "correlativas": "67.18-67.31",
+    "correlativas": "67.18 67.31",
     "categoria": "Termomecánica"
   },
   {
     "id": "67.40",
     "materia": "Diseño de Máquinas Herramientas",
     "creditos": 6,
-    "correlativas": "67.13-67.26-67.27",
+    "correlativas": "67.13 67.26 67.27",
     "categoria": "Diseño Mecánico"
   },
   {
     "id": "67.41",
     "materia": "Automotores",
     "creditos": 6,
-    "correlativas": "67.19-67.25",
+    "correlativas": "67.19 67.25",
     "categoria": "Diseño Mecánico"
   },
   {
@@ -460,28 +460,28 @@
     "id": "67.43",
     "materia": "Robótica Industrial",
     "creditos": 6,
-    "correlativas": "62.06-67.22",
+    "correlativas": "62.06 67.22",
     "categoria": "Industrias"
   },
   {
     "id": "67.47",
     "materia": "Metalografía",
     "creditos": 6,
-    "correlativas": "67.13-67.16",
+    "correlativas": "67.13 67.16",
     "categoria": "Metalúrgica"
   },
   {
     "id": "67.48",
     "materia": "Tratamientos Térmicos",
     "creditos": 4,
-    "correlativas": "67.13-67.16",
+    "correlativas": "67.13 67.16",
     "categoria": "Metalúrgica"
   },
   {
     "id": "67.49",
     "materia": "Metalurgia Física",
     "creditos": 6,
-    "correlativas": "61.03-62.03-63.01",
+    "correlativas": "61.03 62.03 63.01",
     "categoria": "Metalúrgica"
   },
   {
@@ -516,49 +516,49 @@
     "id": "62.18",
     "materia": "Física de Fluidos",
     "creditos": 4,
-    "correlativas": "61.13-67.18",
+    "correlativas": "61.13 67.18",
     "categoria": "Materias Electivas"
   },
   {
     "id": "67.56",
     "materia": "Técnicas Energéticas",
     "creditos": 4,
-    "correlativas": "61.08-67.04",
+    "correlativas": "61.08 67.04",
     "categoria": "Materias Electivas"
   },
   {
     "id": "67.58",
     "materia": "Introducción al Método de los Elementos Finitos",
     "creditos": 6,
-    "correlativas": "64.13-67.18-75.12",
+    "correlativas": "64.13 67.18 75.12",
     "categoria": "Materias Electivas"
   },
   {
     "id": "67.59",
     "materia": "Mecánica del Continuo",
     "creditos": 6,
-    "correlativas": "64.13-67.18-67.60",
+    "correlativas": "64.13 67.18 67.60",
     "categoria": "Materias Electivas"
   },
   {
     "id": "67.60",
     "materia": "Introducción al Análisis Tensorial",
     "creditos": 4,
-    "correlativas": "61.03-61.08",
+    "correlativas": "61.03 61.08",
     "categoria": "Materias Electivas"
   },
   {
     "id": "67.61",
     "materia": "Fundamentos Matemáticos de la Visión en Robótica",
     "creditos": 6,
-    "correlativas": "61.08-67.02",
+    "correlativas": "61.08 67.02",
     "categoria": "Materias Electivas"
   },
   {
     "id": "67.62",
     "materia": "Elementos Finitos Avanzados",
     "creditos": 6,
-    "correlativas": "67.58-67.59",
+    "correlativas": "67.58 67.59",
     "categoria": "Materias Electivas"
   },
   {

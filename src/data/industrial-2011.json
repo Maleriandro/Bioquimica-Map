@@ -47,7 +47,7 @@
     "creditos": 0,
     "categoria": "CBC",
     "level": 0,
-    "correlativas": "CBC66-CBC62-CBC3-CBC5-CBC24-CBC40"
+    "correlativas": "CBC66 CBC62 CBC3 CBC5 CBC24 CBC40"
   },
   {
     "id": "81.01",
@@ -93,7 +93,7 @@
     "id": "82.02",
     "materia": "Física II",
     "creditos": 8,
-    "correlativas": "81.01-82.01",
+    "correlativas": "81.01 82.01",
     "categoria": "Materias Obligatorias",
     "level": 2
   },
@@ -117,7 +117,7 @@
     "id": "85.38",
     "materia": "Electrotecnia General",
     "creditos": 6,
-    "correlativas": "81.02-82.02",
+    "correlativas": "81.02 82.02",
     "categoria": "Materias Obligatorias",
     "level": 3
   },
@@ -125,7 +125,7 @@
     "id": "81.16",
     "materia": "Probabilidad",
     "creditos": 6,
-    "correlativas": "81.01-95.01",
+    "correlativas": "81.01 95.01",
     "categoria": "Materias Obligatorias",
     "level": 3
   },
@@ -141,7 +141,7 @@
     "id": "84.05",
     "materia": "Estática y Resistencia de Materiales",
     "creditos": 6,
-    "correlativas": "81.01-82.01",
+    "correlativas": "81.01 82.01",
     "categoria": "Materias Obligatorias",
     "level": 3
   },
@@ -149,7 +149,7 @@
     "id": "95.13",
     "materia": "Métodos Matemáticos y Numéricos",
     "creditos": 6,
-    "correlativas": "81.01-81.02-95.01",
+    "correlativas": "81.01 81.02 95.01",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -165,7 +165,7 @@
     "id": "87.12",
     "materia": "Mecanismos",
     "creditos": 4,
-    "correlativas": "84.05-87.13",
+    "correlativas": "84.05 87.13",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -182,7 +182,7 @@
     "id": "92.01",
     "materia": "Materiales Industriales I",
     "creditos": 6,
-    "correlativas": "83.02-84.05",
+    "correlativas": "83.02 84.05",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -198,7 +198,7 @@
     "id": "91.10",
     "materia": "Organización Industrial I",
     "creditos": 4,
-    "correlativas": "81.16-92.03",
+    "correlativas": "81.16 92.03",
     "categoria": "Materias Obligatorias",
     "level": 5
   },
@@ -206,7 +206,7 @@
     "id": "89.17",
     "materia": "Mecánica de los Fluidos",
     "creditos": 6,
-    "correlativas": "81.01-82.01",
+    "correlativas": "81.01 82.01",
     "categoria": "Materias Obligatorias",
     "level": 5
   },
@@ -255,7 +255,7 @@
     "id": "92.02",
     "materia": "Industrias I",
     "creditos": 6,
-    "correlativas": "87.14-89.17-92.01",
+    "correlativas": "87.14 89.17 92.01",
     "categoria": "Materias Obligatorias",
     "level": 6
   },
@@ -271,7 +271,7 @@
     "id": "91.07",
     "materia": "Investigación Operativa I",
     "creditos": 4,
-    "correlativas": "91.03-91.12",
+    "correlativas": "91.03 91.12",
     "categoria": "Materias Obligatorias",
     "level": 7
   },
@@ -279,7 +279,7 @@
     "id": "92.18",
     "materia": "Industrias II",
     "creditos": 6,
-    "correlativas": "87.14-89.17-92.01",
+    "correlativas": "87.14 89.17 92.01",
     "categoria": "Materias Obligatorias",
     "level": 7
   },
@@ -287,7 +287,7 @@
     "id": "92.04",
     "materia": "Procesos de Manufactura I",
     "creditos": 4,
-    "correlativas": "87.12-92.01",
+    "correlativas": "87.12 92.01",
     "categoria": "Materias Obligatorias",
     "level": 7
   },
@@ -295,7 +295,7 @@
     "id": "92.05",
     "materia": "Edificios Industriales",
     "creditos": 4,
-    "correlativas": "87.13-91.10-92.01-97.01",
+    "correlativas": "87.13 91.10 92.01 97.01",
     "categoria": "Materias Obligatorias",
     "level": 7
   },
@@ -303,7 +303,7 @@
     "id": "92.06",
     "materia": "Automatización Industrial y Robótica",
     "creditos": 4,
-    "correlativas": "85.38-95.13",
+    "correlativas": "85.38 95.13",
     "categoria": "Materias Obligatorias",
     "level": 8
   },
@@ -311,7 +311,7 @@
     "id": "91.31",
     "materia": "Investigación Operativa II",
     "creditos": 4,
-    "correlativas": "91.07-91.30",
+    "correlativas": "91.07 91.30",
     "categoria": "Materias Obligatorias",
     "level": 8
   },
@@ -319,7 +319,7 @@
     "id": "92.07",
     "materia": "Instalaciones Industriales",
     "creditos": 6,
-    "correlativas": "85.38-91.12-92.18",
+    "correlativas": "85.38 91.12 92.18",
     "categoria": "Materias Obligatorias",
     "level": 8
   },
@@ -327,7 +327,7 @@
     "id": "91.28",
     "materia": "Gestión de Costos",
     "creditos": 4,
-    "correlativas": "91.12-91.24",
+    "correlativas": "91.12 91.24",
     "categoria": "Materias Obligatorias",
     "level": 8
   },
@@ -368,21 +368,21 @@
     "id": "62.13",
     "materia": "Física III C",
     "creditos": 6,
-    "correlativas": "81.02-82.02-83.01",
+    "correlativas": "81.02 82.02 83.01",
     "categoria": "Materias Electivas"
   },
   {
     "id": "85.20",
     "materia": "Energías Renovables",
     "creditos": 4,
-    "correlativas": "85.38-87.14",
+    "correlativas": "85.38 87.14",
     "categoria": "Materias Electivas"
   },
   {
     "id": "87.15",
     "materia": "Taller A",
     "creditos": 4,
-    "correlativas": "87.13-92.01",
+    "correlativas": "87.13 92.01",
     "categoria": "Materias Electivas"
   },
   {
@@ -403,7 +403,7 @@
     "id": "91.20",
     "materia": "Comercialización",
     "creditos": 4,
-    "correlativas": "91.12-91.24",
+    "correlativas": "91.12 91.24",
     "categoria": "Materias Electivas"
   },
   {
@@ -474,7 +474,7 @@
     "id": "91.51",
     "materia": "Desarrollo y Gestión de Proyectos",
     "creditos": 4,
-    "correlativas": "91.31-91.08",
+    "correlativas": "91.31 91.08",
     "categoria": "Materias Electivas"
   },
   {
@@ -489,14 +489,14 @@
     "id": "91.54",
     "materia": "Ciencia de Datos para la Toma de Decisiones",
     "creditos": 4,
-    "correlativas": "81.02-91.30",
+    "correlativas": "81.02 91.30",
     "categoria": "Materias Electivas"
   },
   {
     "id": "92.08",
     "materia": "Diseño de Productos",
     "creditos": 4,
-    "correlativas": "91.12-92.01",
+    "correlativas": "91.12 92.01",
     "categoria": "Materias Electivas"
   },
   {
@@ -524,7 +524,7 @@
     "id": "92.12",
     "materia": "Industrias Textiles",
     "creditos": 4,
-    "correlativas": "91.12-92.01",
+    "correlativas": "91.12 92.01",
     "categoria": "Materias Electivas"
   },
   {
@@ -552,7 +552,7 @@
     "id": "92.20",
     "materia": "Industria Automotriz",
     "creditos": 4,
-    "correlativas": "91.12-92.04",
+    "correlativas": "91.12 92.04",
     "categoria": "Materias Electivas"
   },
   {

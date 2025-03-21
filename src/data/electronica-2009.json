@@ -47,7 +47,7 @@
     "creditos": 0,
     "categoria": "CBC",
     "level": 0,
-    "correlativas": "CBC66-CBC62-CBC3-CBC5-CBC24-CBC40"
+    "correlativas": "CBC66 CBC62 CBC3 CBC5 CBC24 CBC40"
   },
   {
     "id": "86.48",
@@ -92,7 +92,7 @@
     "id": "82.02",
     "materia": "Física II A",
     "creditos": 8,
-    "correlativas": "81.01-82.01",
+    "correlativas": "81.01 82.01",
     "categoria": "Materias Obligatorias",
     "level": 2
   },
@@ -116,7 +116,7 @@
     "id": "81.05",
     "materia": "Análisis Matemático III A",
     "creditos": 6,
-    "correlativas": "81.01-81.02",
+    "correlativas": "81.01 81.02",
     "categoria": "Materias Obligatorias",
     "level": 3
   },
@@ -124,7 +124,7 @@
     "id": "81.04",
     "materia": "Probabilidad y Estadística B",
     "creditos": 6,
-    "correlativas": "81.01-81.02",
+    "correlativas": "81.01 81.02",
     "categoria": "Materias Obligatorias",
     "level": 3
   },
@@ -148,7 +148,7 @@
     "id": "95.04",
     "materia": "Análisis Numérico",
     "creditos": 6,
-    "correlativas": "81.01-81.02-95.11",
+    "correlativas": "81.01 81.02 95.11",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -156,7 +156,7 @@
     "id": "86.04",
     "materia": "Análisis de Circuitos",
     "creditos": 6,
-    "correlativas": "86.02-81.05-82.02",
+    "correlativas": "86.02 81.05 82.02",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -164,7 +164,7 @@
     "id": "82.06",
     "materia": "Electromagnetismo",
     "creditos": 6,
-    "correlativas": "82.02-81.05",
+    "correlativas": "82.02 81.05",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -172,7 +172,7 @@
     "id": "86.03",
     "materia": "Dispositivos Semiconductores",
     "creditos": 6,
-    "correlativas": "82.02-86.02",
+    "correlativas": "82.02 86.02",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -188,7 +188,7 @@
     "id": "86.05",
     "materia": "Señales y Sistemas",
     "creditos": 6,
-    "correlativas": "86.04-81.04",
+    "correlativas": "86.04 81.04",
     "categoria": "Materias Obligatorias",
     "level": 5
   },
@@ -196,7 +196,7 @@
     "id": "86.06",
     "materia": "Circuitos Electrónicos",
     "creditos": 6,
-    "correlativas": "86.03-86.04",
+    "correlativas": "86.03 86.04",
     "categoria": "Materias Obligatorias",
     "level": 5
   },
@@ -213,7 +213,7 @@
     "id": "86.09",
     "materia": "Procesos Estocásticos",
     "creditos": 6,
-    "correlativas": "86.05-81.04",
+    "correlativas": "86.05 81.04",
     "categoria": "Materias Obligatorias",
     "level": 6
   },
@@ -229,7 +229,7 @@
     "id": "86.07",
     "materia": "Laboratorio de Microprocesadores",
     "creditos": 6,
-    "correlativas": "86.01-86.03-86.04-95.11",
+    "correlativas": "86.01 86.03 86.04 95.11",
     "categoria": "Materias Obligatorias",
     "level": 6
   },
@@ -245,7 +245,7 @@
     "id": "86.10",
     "materia": "Diseño de Circuitos Electrónicos",
     "creditos": 6,
-    "correlativas": "86.06-86.07-86.70",
+    "correlativas": "86.06 86.07 86.70",
     "categoria": "Materias Obligatorias",
     "level": 7
   },
@@ -253,7 +253,7 @@
     "id": "86.69",
     "materia": "Instrumentos y Mediciones Electrónicas",
     "creditos": 6,
-    "correlativas": "82.06-86.06-86.07",
+    "correlativas": "82.06 86.06 86.07",
     "categoria": "Materias Obligatorias",
     "level": 7
   },
@@ -301,14 +301,14 @@
     "id": "81.08",
     "materia": "Análisis Matricial y Métodos Numéricos",
     "creditos": 6,
-    "correlativas": "81.05-95.04",
+    "correlativas": "81.05 95.04",
     "categoria": "Procesamiento de Señales"
   },
   {
     "id": "82.04",
     "materia": "Mecánica Racional",
     "creditos": 4,
-    "correlativas": "81.05-82.01",
+    "correlativas": "81.05 82.01",
     "categoria": "Automatización y Control"
   },
   {
@@ -322,7 +322,7 @@
     "id": "86.15",
     "materia": "Robótica",
     "creditos": 6,
-    "correlativas": "82.04-86.08",
+    "correlativas": "82.04 86.08",
     "categoria": "Automatización y Control"
   },
   {
@@ -343,7 +343,7 @@
     "id": "86.26",
     "materia": "Comunicaciones Digitales II",
     "creditos": 6,
-    "correlativas": "86.12-86.25",
+    "correlativas": "86.12 86.25",
     "categoria": "Telecomunicaciones"
   },
   {
@@ -399,14 +399,14 @@
     "id": "86.22",
     "materia": "Laboratorio de Control Automático",
     "creditos": 6,
-    "correlativas": "86.08-86.10",
+    "correlativas": "86.08 86.10",
     "categoria": "Automatización y Control"
   },
   {
     "id": "86.23",
     "materia": "Accionamientos Variables",
     "creditos": 6,
-    "correlativas": "86.08-86.10",
+    "correlativas": "86.08 86.10",
     "categoria": "Automatización y Control"
   },
   {
@@ -462,7 +462,7 @@
     "id": "86.32",
     "materia": "Sistemas Inalámbricos",
     "creditos": 6,
-    "correlativas": "86.12-86.29",
+    "correlativas": "86.12 86.29",
     "categoria": "Telecomunicaciones"
   },
   {
@@ -476,7 +476,7 @@
     "id": "86.36",
     "materia": "Criptografía y Seguridad Informática",
     "creditos": 6,
-    "correlativas": "86.05-86.07",
+    "correlativas": "86.05 86.07",
     "categoria": "Sistemas Digitales y Computación"
   },
   {
@@ -504,7 +504,7 @@
     "id": "86.41",
     "materia": "Sistemas Digitales",
     "creditos": 6,
-    "correlativas": "81.05-86.01-95.11",
+    "correlativas": "81.05 86.01 95.11",
     "categoria": "Sistemas Digitales y Computación"
   },
   {
@@ -525,7 +525,7 @@
     "id": "86.44",
     "materia": "Técnica Digital Avanzada",
     "creditos": 6,
-    "correlativas": "86.01-86.03",
+    "correlativas": "86.01 86.03",
     "categoria": "Sistemas Digitales y Computación"
   },
   {
@@ -539,7 +539,7 @@
     "id": "86.47",
     "materia": "Optoelectrónica",
     "creditos": 6,
-    "correlativas": "82.03-82.06",
+    "correlativas": "82.03 82.06",
     "categoria": "Física Electrónica"
   },
   {
@@ -595,7 +595,7 @@
     "id": "86.56",
     "materia": "Procesamiento de Imágenes",
     "creditos": 6,
-    "correlativas": "86.51-86.55",
+    "correlativas": "86.51 86.55",
     "categoria": "Multiples Orientaciones"
   },
   {
@@ -630,7 +630,7 @@
     "id": "86.61",
     "materia": "Ingeniería Biomédica",
     "creditos": 6,
-    "correlativas": "86.08-86.60",
+    "correlativas": "86.08 86.60",
     "categoria": "Instrumentación Biomédica"
   },
   {
@@ -707,14 +707,14 @@
     "id": "95.03",
     "materia": "Sistemas Operativos",
     "creditos": 6,
-    "correlativas": "86.07-95.02",
+    "correlativas": "86.07 95.02",
     "categoria": "Sistemas Digitales y Computación"
   },
   {
     "id": "95.05",
     "materia": "Base de Datos",
     "creditos": 6,
-    "correlativas": "86.07-95.02",
+    "correlativas": "86.07 95.02",
     "categoria": "Materias Electivas"
   },
   {
@@ -742,14 +742,14 @@
     "id": "86.00",
     "materia": "Tesis de Ingeniería Electrónica",
     "creditos": 18,
-    "correlativas": "83.01-95.04-82.03-86.08-86.09-86.12-86.69-86.14",
+    "correlativas": "83.01 95.04 82.03 86.08 86.09 86.12 86.69 86.14",
     "categoria": "Fin de Carrera"
   },
   {
     "id": "86.99",
     "materia": "Trabajo Profesional de Ingeniería Electrónica",
     "creditos": 18,
-    "correlativas": "83.01-95.04-82.03-86.08-86.09-86.12-86.69-86.14",
+    "correlativas": "83.01 95.04 82.03 86.08 86.09 86.12 86.69 86.14",
     "categoria": "Fin de Carrera"
   },
   {

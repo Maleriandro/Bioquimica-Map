@@ -47,7 +47,7 @@
     "creditos": 0,
     "categoria": "CBC",
     "level": 0,
-    "correlativas": "CBC28-CBC27-CBC3-CBC5-CBC24-CBC40"
+    "correlativas": "CBC28 CBC27 CBC3 CBC5 CBC24 CBC40"
   },
   {
     "id": "61.08",
@@ -93,7 +93,7 @@
     "id": "62.03",
     "materia": "Física II A",
     "creditos": 8,
-    "correlativas": "61.03-62.01",
+    "correlativas": "61.03 62.01",
     "categoria": "Materias Obligatorias",
     "level": 2
   },
@@ -109,7 +109,7 @@
     "id": "75.12",
     "materia": "Análisis Numérico I",
     "creditos": 6,
-    "correlativas": "61.03-61.08-75.01",
+    "correlativas": "61.03 61.08 75.01",
     "categoria": "Materias Obligatorias",
     "level": 3
   },
@@ -117,7 +117,7 @@
     "id": "62.06",
     "materia": "Mecánica I",
     "creditos": 6,
-    "correlativas": "61.03-61.08-62.01",
+    "correlativas": "61.03 61.08 62.01",
     "categoria": "Materias Obligatorias",
     "level": 3
   },
@@ -133,7 +133,7 @@
     "id": "64.11",
     "materia": "Estabilidad I B",
     "creditos": 6,
-    "correlativas": "62.01-67.02",
+    "correlativas": "62.01 67.02",
     "categoria": "Materias Obligatorias",
     "level": 3
   },
@@ -165,7 +165,7 @@
     "id": "64.12",
     "materia": "Estabilidad II B",
     "creditos": 8,
-    "correlativas": "61.03-61.08-64.11-67.13",
+    "correlativas": "61.03 61.08 64.11 67.13",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -173,7 +173,7 @@
     "id": "73.01",
     "materia": "Arquitectura Naval I",
     "creditos": 6,
-    "correlativas": "64.11-67.02",
+    "correlativas": "64.11 67.02",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -181,7 +181,7 @@
     "id": "67.04",
     "materia": "Termodinámica I A",
     "creditos": 8,
-    "correlativas": "61.08-62.03",
+    "correlativas": "61.08 62.03",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -229,7 +229,7 @@
     "id": "73.40",
     "materia": "Prácticas en Astilleros I",
     "creditos": 4,
-    "correlativas": "73.01-73.02",
+    "correlativas": "73.01 73.02",
     "categoria": "Materias Obligatorias",
     "level": 6
   },
@@ -269,7 +269,7 @@
     "id": "61.16",
     "materia": "Matemática para Ingenieros",
     "creditos": 8,
-    "correlativas": "61.03-61.08",
+    "correlativas": "61.03 61.08",
     "categoria": "Materias Obligatorias",
     "level": 7
   },
@@ -277,7 +277,7 @@
     "id": "73.04",
     "materia": "Estructura de Buques",
     "creditos": 6,
-    "correlativas": "64.13-73.02",
+    "correlativas": "64.13 73.02",
     "categoria": "Materias Obligatorias",
     "level": 7
   },
@@ -317,7 +317,7 @@
     "id": "73.09",
     "materia": "Proyecto de Buques I",
     "creditos": 6,
-    "correlativas": "73.03-73.05-73.07",
+    "correlativas": "73.03 73.05 73.07",
     "categoria": "Materias Obligatorias",
     "level": 8
   },
@@ -333,7 +333,7 @@
     "id": "73.06",
     "materia": "Vibraciones de Estructuras",
     "creditos": 6,
-    "correlativas": "64.13-73.07-73.12",
+    "correlativas": "64.13 73.07 73.12",
     "categoria": "Materias Obligatorias",
     "level": 9
   },
@@ -377,14 +377,14 @@
     "id": "67.38",
     "materia": "Tecnología Mecánica B",
     "creditos": 6,
-    "correlativas": "67.02-67.13",
+    "correlativas": "67.02 67.13",
     "categoria": "Materias Electivas"
   },
   {
     "id": "67.61",
     "materia": "Fundamentos Matemáticos de la Visión en Robótica",
     "creditos": 6,
-    "correlativas": "61.08-67.02",
+    "correlativas": "61.08 67.02",
     "categoria": "Materias Electivas"
   },
   {
@@ -412,7 +412,7 @@
     "id": "71.36",
     "materia": "Gestión de Calidad",
     "creditos": 4,
-    "correlativas": "61.06-73.07",
+    "correlativas": "61.06 73.07",
     "categoria": "Materias Electivas"
   },
   {
@@ -426,7 +426,7 @@
     "id": "71.34",
     "materia": "Gestión Presupuestaria",
     "creditos": 4,
-    "correlativas": "71.50-71.51",
+    "correlativas": "71.50 71.51",
     "categoria": "Materias Electivas"
   },
   {
@@ -454,7 +454,7 @@
     "id": "73.15",
     "materia": "Máquinas Marinas III",
     "creditos": 6,
-    "correlativas": "73.05-73.11-73.12",
+    "correlativas": "73.05 73.11 73.12",
     "categoria": "Materias Electivas"
   },
   {

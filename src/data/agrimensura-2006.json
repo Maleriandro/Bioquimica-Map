@@ -47,7 +47,7 @@
     "creditos": 0,
     "categoria": "CBC",
     "level": 0,
-    "correlativas": "CBC28-CBC27-CBC3-CBC5-CBC24-CBC40"
+    "correlativas": "CBC28 CBC27 CBC3 CBC5 CBC24 CBC40"
   },
   {
     "id": "62.01",
@@ -85,7 +85,7 @@
     "id": "62.03",
     "materia": "Física II A",
     "creditos": 8,
-    "correlativas": "61.03-62.01",
+    "correlativas": "61.03 62.01",
     "categoria": "Materias Obligatorias",
     "level": 2
   },
@@ -149,7 +149,7 @@
     "id": "70.12",
     "materia": "Geodesia I",
     "creditos": 4,
-    "correlativas": "61.03-70.08",
+    "correlativas": "61.03 70.08",
     "categoria": "Materias Obligatorias",
     "level": 3
   },
@@ -173,7 +173,7 @@
     "id": "70.07",
     "materia": "Calculo De Compensación",
     "creditos": 4,
-    "correlativas": "61.06-70.08",
+    "correlativas": "61.06 70.08",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -181,7 +181,7 @@
     "id": "70.09",
     "materia": "Topografía II",
     "creditos": 6,
-    "correlativas": "70.08-70.04",
+    "correlativas": "70.08 70.04",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -221,7 +221,7 @@
     "id": "70.34",
     "materia": "Topografía III",
     "creditos": 8,
-    "correlativas": "70.07-70.09-70.12-70.15",
+    "correlativas": "70.07 70.09 70.12 70.15",
     "categoria": "Materias Obligatorias",
     "level": 5
   },
@@ -229,7 +229,7 @@
     "id": "70.17",
     "materia": "Geodesia III",
     "creditos": 4,
-    "correlativas": "62.03-70.07-70.13",
+    "correlativas": "62.03 70.07 70.13",
     "categoria": "Materias Obligatorias",
     "level": 6
   },
@@ -237,7 +237,7 @@
     "id": "70.16",
     "materia": "Fotogrametría II",
     "creditos": 4,
-    "correlativas": "70.14-70.07",
+    "correlativas": "70.14 70.07",
     "categoria": "Materias Obligatorias",
     "level": 6
   },
@@ -245,7 +245,7 @@
     "id": "70.36",
     "materia": "Sistemas Cartográficos y Teledetección",
     "creditos": 4,
-    "correlativas": "61.06-70.14-70.15",
+    "correlativas": "61.06 70.14 70.15",
     "categoria": "Materias Obligatorias",
     "level": 6
   },
@@ -261,7 +261,7 @@
     "id": "70.35",
     "materia": "Topografía IV",
     "creditos": 8,
-    "correlativas": "70.34-70.13",
+    "correlativas": "70.34 70.13",
     "categoria": "Materias Obligatorias",
     "level": 6
   },
@@ -269,7 +269,7 @@
     "id": "70.32",
     "materia": "Sistemas de Información Geográfica",
     "creditos": 4,
-    "correlativas": "70.04-70.15-70.36",
+    "correlativas": "70.04 70.15 70.36",
     "categoria": "Materias Obligatorias",
     "level": 7
   },
@@ -277,7 +277,7 @@
     "id": "70.31",
     "materia": "Información Rural",
     "creditos": 4,
-    "correlativas": "71.23-71.24-70.36",
+    "correlativas": "71.23 71.24 70.36",
     "categoria": "Materias Obligatorias",
     "level": 7
   },
@@ -285,7 +285,7 @@
     "id": "70.27",
     "materia": "Catastro",
     "creditos": 4,
-    "correlativas": "70.16-71.23-71.24",
+    "correlativas": "70.16 71.23 71.24",
     "categoria": "Materias Obligatorias",
     "level": 7
   },
@@ -301,7 +301,7 @@
     "id": "70.37",
     "materia": "Levantamiento y Práctica Profesional I",
     "creditos": 6,
-    "correlativas": "70.35-71.24",
+    "correlativas": "70.35 71.24",
     "categoria": "Materias Obligatorias",
     "level": 7
   },
@@ -309,7 +309,7 @@
     "id": "70.39",
     "materia": "Valuaciones",
     "creditos": 4,
-    "correlativas": "71.23-70.27-70.33",
+    "correlativas": "71.23 70.27 70.33",
     "categoria": "Materias Obligatorias",
     "level": 8
   },
@@ -317,7 +317,7 @@
     "id": "70.38",
     "materia": "Levantamiento y Práctica Profesional II",
     "creditos": 6,
-    "correlativas": "70.33-70.37",
+    "correlativas": "70.33 70.37",
     "categoria": "Materias Obligatorias",
     "level": 8
   },
@@ -354,21 +354,21 @@
     "id": "68.11",
     "materia": "Ordenamiento Rural y Urbano",
     "creditos": 4,
-    "correlativas": "68.06-70.27",
+    "correlativas": "68.06 70.27",
     "categoria": "Materias Electivas"
   },
   {
     "id": "70.40",
     "materia": "Geología Aplicada",
     "creditos": 4,
-    "correlativas": "62.03-70.06",
+    "correlativas": "62.03 70.06",
     "categoria": "Materias Electivas"
   },
   {
     "id": "70.41",
     "materia": "Oceanografía Física",
     "creditos": 4,
-    "correlativas": "61.03-62.03",
+    "correlativas": "61.03 62.03",
     "categoria": "Materias Electivas"
   },
   {
@@ -382,7 +382,7 @@
     "id": "70.43",
     "materia": "Topografía De Obra",
     "creditos": 4,
-    "correlativas": "70.12-70.09",
+    "correlativas": "70.12 70.09",
     "categoria": "Materias Electivas"
   },
   {

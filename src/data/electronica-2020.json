@@ -47,7 +47,7 @@
     "creditos": 0,
     "categoria": "CBC",
     "level": 0,
-    "correlativas": "CBC66-CBC62-CBC3-CBC90-CBC24-CBC40"
+    "correlativas": "CBC66 CBC62 CBC3 CBC90 CBC24 CBC40"
   },
   {
     "id": "AMII",
@@ -93,7 +93,7 @@
     "id": "EMC",
     "materia": "Electricidad, Magnetismo y Calor",
     "creditos": 6,
-    "correlativas": "AMII-FSP",
+    "correlativas": "AMII FSP",
     "categoria": "Materias Obligatorias",
     "level": 2
   },
@@ -117,7 +117,7 @@
     "id": "PYE",
     "materia": "Probabilidad y Estadística",
     "creditos": 6,
-    "correlativas": "AMII-AL",
+    "correlativas": "AMII AL",
     "categoria": "Materias Obligatorias",
     "level": 3
   },
@@ -125,7 +125,7 @@
     "id": "SS",
     "materia": "Señales y Sistemas",
     "creditos": 6,
-    "correlativas": "AMII-AL",
+    "correlativas": "AMII AL",
     "categoria": "Materias Obligatorias",
     "level": 3
   },
@@ -133,7 +133,7 @@
     "id": "AC",
     "materia": "Análisis de Circuitos",
     "creditos": 6,
-    "correlativas": "IIE-EMC",
+    "correlativas": "IIE EMC",
     "categoria": "Materias Obligatorias",
     "level": 3
   },
@@ -157,7 +157,7 @@
     "id": "CM",
     "materia": "Circuitos Microelectrónicos",
     "creditos": 6,
-    "correlativas": "IDE-AC",
+    "correlativas": "IDE AC",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -165,7 +165,7 @@
     "id": "PE",
     "materia": "Procesos Estocásticos",
     "creditos": 6,
-    "correlativas": "PYE-SS",
+    "correlativas": "PYE SS",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -173,7 +173,7 @@
     "id": "CA",
     "materia": "Control Automáticos",
     "creditos": 6,
-    "correlativas": "EMC-SS",
+    "correlativas": "EMC SS",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -181,7 +181,7 @@
     "id": "TSE",
     "materia": "Taller de Sistemas Embebidos",
     "creditos": 6,
-    "correlativas": "AP-IDE-SD",
+    "correlativas": "AP IDE SD",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -205,7 +205,7 @@
     "id": "TAC",
     "materia": "Taller de Automatización y Control",
     "creditos": 6,
-    "correlativas": "AP-CA-SD",
+    "correlativas": "AP CA SD",
     "categoria": "Materias Obligatorias",
     "level": 5
   },
@@ -221,7 +221,7 @@
     "id": "DS",
     "materia": "Dispositivos Semiconductores",
     "creditos": 6,
-    "correlativas": "IDE-AC",
+    "correlativas": "IDE AC",
     "categoria": "Materias Obligatorias",
     "level": 6
   },
@@ -229,7 +229,7 @@
     "id": "TCD",
     "materia": "Taller de Comunicaciones Digitales",
     "creditos": 6,
-    "correlativas": "SS-RC",
+    "correlativas": "SS RC",
     "categoria": "Materias Obligatorias",
     "level": 6
   },
@@ -237,7 +237,7 @@
     "id": "TDCE",
     "materia": "Taller de Diseño de Circuitos Electrónicos",
     "creditos": 6,
-    "correlativas": "CM-EA",
+    "correlativas": "CM EA",
     "categoria": "Materias Obligatorias",
     "level": 6
   },
@@ -280,7 +280,7 @@
     "id": "CI",
     "materia": "Comunicaciones Inalámbricas",
     "creditos": 4,
-    "correlativas": "EA-TCD",
+    "correlativas": "EA TCD",
     "categoria": "Materias Electivas"
   },
   {
@@ -378,7 +378,7 @@
     "id": "TSD",
     "materia": "Taller de Sistemas Digitales",
     "creditos": 6,
-    "correlativas": "SD-SS",
+    "correlativas": "SD SS",
     "categoria": "Materias Electivas"
   },
   {
@@ -448,14 +448,14 @@
     "id": "AV",
     "materia": "Accionamientos Variables",
     "creditos": 6,
-    "correlativas": "CM-CA",
+    "correlativas": "CM CA",
     "categoria": "Materias Electivas"
   },
   {
     "id": "RM",
     "materia": "Robótica Móvil",
     "creditos": 4,
-    "correlativas": "PE-AP",
+    "correlativas": "PE AP",
     "categoria": "Materias Electivas"
   },
   {
@@ -469,7 +469,7 @@
     "id": "ME",
     "materia": "Microeletrónica",
     "creditos": 4,
-    "correlativas": "CM-DS",
+    "correlativas": "CM DS",
     "categoria": "Materias Electivas"
   },
   {
@@ -532,7 +532,7 @@
     "id": "CRIC",
     "materia": "Ciberseguridad de Redes e Infraestructuras Críticas",
     "creditos": 4,
-    "correlativas": "AP-TCD",
+    "correlativas": "AP TCD",
     "categoria": "Materias Electivas"
   },
   {
@@ -554,7 +554,7 @@
     "id": "TMIAB",
     "materia": "Tecnología de Materiales para la Industria Aeroespacial B",
     "creditos": 4,
-    "correlativas": "EMC-QE",
+    "correlativas": "EMC QE",
     "categoria": "Materias Electivas"
   },
   {

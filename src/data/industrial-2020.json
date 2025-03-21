@@ -47,7 +47,7 @@
     "creditos": 0,
     "categoria": "CBC",
     "level": 0,
-    "correlativas": "CBC66-CBC62-CBC3-CBC90-CBC24-CBC40"
+    "correlativas": "CBC66 CBC62 CBC3 CBC90 CBC24 CBC40"
   },
   {
     "id": "AMII",
@@ -93,7 +93,7 @@
     "id": "ERM",
     "materia": "Estática y Resistencia de Materiales",
     "creditos": 6,
-    "correlativas": "AMII-FSP",
+    "correlativas": "AMII FSP",
     "categoria": "Materias Obligatorias",
     "level": 2
   },
@@ -117,7 +117,7 @@
     "id": "ECO",
     "materia": "Economía",
     "creditos": 6,
-    "correlativas": "AMII-PII",
+    "correlativas": "AMII PII",
     "categoria": "Materias Obligatorias",
     "level": 3
   },
@@ -125,7 +125,7 @@
     "id": "TDE",
     "materia": "Transformación de la Energía",
     "creditos": 8,
-    "correlativas": "AMII-FSP-QB",
+    "correlativas": "AMII FSP QB",
     "categoria": "Materias Obligatorias",
     "level": 3
   },
@@ -133,7 +133,7 @@
     "id": "MAI",
     "materia": "Materiales y Aplicaciones I",
     "creditos": 6,
-    "correlativas": "QB-ERM-PII",
+    "correlativas": "QB ERM PII",
     "categoria": "Materias Obligatorias",
     "level": 3
   },
@@ -141,7 +141,7 @@
     "id": "EYM",
     "materia": "Electricidad y Magnetismo",
     "creditos": 6,
-    "correlativas": "AMII-FSP",
+    "correlativas": "AMII FSP",
     "categoria": "Materias Obligatorias",
     "level": 4
   },
@@ -181,7 +181,7 @@
     "id": "INVOP",
     "materia": "Investigación Operativa",
     "creditos": 8,
-    "correlativas": "AL-PROBA",
+    "correlativas": "AL PROBA",
     "categoria": "Materias Obligatorias",
     "level": 5
   },
@@ -189,7 +189,7 @@
     "id": "SCGC",
     "materia": "Sistemas Contables y Gestión de Costos",
     "creditos": 4,
-    "correlativas": "ECO-GICV",
+    "correlativas": "ECO GICV",
     "categoria": "Materias Obligatorias",
     "level": 5
   },
@@ -214,7 +214,7 @@
     "id": "INGECO",
     "materia": "Ingeniería Económica",
     "creditos": 4,
-    "correlativas": "DE-SCGC",
+    "correlativas": "DE SCGC",
     "categoria": "Materias Obligatorias",
     "level": 6
   },
@@ -222,7 +222,7 @@
     "id": "ESAI",
     "materia": "Equipos y Sistemas para Automatización Industrial",
     "creditos": 6,
-    "correlativas": "EMIE-MAI",
+    "correlativas": "EMIE MAI",
     "categoria": "Materias Obligatorias",
     "level": 6
   },
@@ -230,7 +230,7 @@
     "id": "INDQUI",
     "materia": "Industrias Químicas",
     "creditos": 4,
-    "correlativas": "TDE-MAI",
+    "correlativas": "TDE MAI",
     "categoria": "Materias Obligatorias",
     "level": 6
   },
@@ -255,7 +255,7 @@
     "id": "INDEXT",
     "materia": "Industrias Extractivas",
     "creditos": 4,
-    "correlativas": "TDE-MAI",
+    "correlativas": "TDE MAI",
     "categoria": "Materias Obligatorias",
     "level": 7
   },
@@ -263,7 +263,7 @@
     "id": "PROYIND",
     "materia": "Proyecto Industrial",
     "creditos": 8,
-    "correlativas": "EMIE-TDE-MAI-HYS-IASCP",
+    "correlativas": "EMIE TDE MAI HYS IASCP",
     "categoria": "Materias Obligatorias",
     "level": 7
   },
@@ -350,7 +350,7 @@
     "id": "IGP",
     "materia": "Innovación y Gestión de Proyectos",
     "creditos": 4,
-    "correlativas": "DE-GICV",
+    "correlativas": "DE GICV",
     "categoria": "Materias Electivas"
   },
   {
@@ -365,7 +365,7 @@
     "id": "DDP",
     "materia": "Diseño de Producto",
     "creditos": 4,
-    "correlativas": "GICV-MAI",
+    "correlativas": "GICV MAI",
     "categoria": "Materias Electivas"
   },
   {
@@ -491,7 +491,7 @@
     "id": "TALL",
     "materia": "Taller",
     "creditos": 4,
-    "correlativas": "PII-MAI",
+    "correlativas": "PII MAI",
     "categoria": "Materias Electivas"
   },
   {
