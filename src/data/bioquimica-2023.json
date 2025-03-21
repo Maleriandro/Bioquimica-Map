@@ -469,9 +469,9 @@
 	},
 	{
 		"id": "BI1",
-		"materia": "",
+		"materia": "Procesos de Biotecnologia",
 		"creditos": 1,
-		"correlativas": "Procesos de Biotecnologia",
+		"correlativas": "",
 		"correlativa-cursada": "",
 		"correlativa-rendir" : "",
 		"categoria": "Bioquímica Industrial",

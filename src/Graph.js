@@ -145,6 +145,8 @@ const Graph = (userContext) => {
     const edges = user.carrera.graph.flatMap((n) => {
       let e = [];
 
+      
+
       if (n["correlativa-cursada"]) {
         n["correlativa-cursada"].split(" ").forEach((c) => {
           let [tipo, id] = c.split(":");

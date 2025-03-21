@@ -113,8 +113,13 @@ class Node {
 
     let materiasNecesariasParaCursar = [];
 
-    if (this["correlativa-cursada"]) {
+
+    if (this["correlativa-cursada"] !== undefined) {
       materiasNecesariasParaCursar = this["correlativa-cursada"].split(" ");
+    } else if (this["correlativa-final"] !== undefined) {
+      materiasNecesariasParaCursar = this["correlativa-final"].split(" ");
+    } else if (this["correlativas"] !== undefined) {
+      materiasNecesariasParaCursar = this["correlativas"].split(" ");
     }
 
     const materiasCursadasNecesariaParaCursar = []
