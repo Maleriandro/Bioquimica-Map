@@ -655,64 +655,64 @@ export const PLANES = [
     nombrecorto: "Bioquímica",
     planes: ["bioquimica"],
   },
-  {
-    nombre: "Ingeniería Civil",
-    nombrecorto: "Civil",
-    planes: ["civil", "civil-2020"],
-  },
-  {
-    nombre: "Ingeniería de Alimentos",
-    nombrecorto: "Alimentos",
-    planes: ["alimentos", "alimentos-2020"],
-  },
-  {
-    nombre: "Ingeniería en Energía Eléctrica",
-    nombrecorto: "Electricista",
-    planes: ["electricista", "energia-electrica-2020"],
-  },
-  {
-    nombre: "Ingeniería Electrónica",
-    nombrecorto: "Electrónica",
-    planes: ["electronica", "electronica-2020"],
-  },
-  {
-    nombre: "Ingeniería en Agrimensura",
-    nombrecorto: "Agrimensura",
-    planes: ["agrimensura", "agrimensura-2020"],
-  },
-  {
-    nombre: "Ingeniería en Informática",
-    nombrecorto: "Informática",
-    planes: ["informatica", "informatica-2020"],
-  },
-  {
-    nombre: "Ingeniería en Petróleo",
-    nombrecorto: "Petróleo",
-    planes: ["petroleo", "petroleo-2020"],
-  },
-  {
-    nombre: "Ingeniería Industrial",
-    nombrecorto: "Industrial",
-    planes: ["industrial", "industrial-2020"],
-  },
-  {
-    nombre: "Ingeniería Mecánica",
-    nombrecorto: "Mecánica",
-    planes: ["mecanica", "mecanica-2020"],
-  },
-  {
-    nombre: "Ingeniería Naval y Mecánica",
-    nombrecorto: "Naval",
-    planes: ["naval"],
-  },
-  {
-    nombre: "Ingeniería Química",
-    nombrecorto: "Química",
-    planes: ["quimica", "quimica-2020"],
-  },
-  {
-    nombre: "Licenciatura en Análisis de Sistemas",
-    nombrecorto: "Sistemas",
-    planes: ["sistemasviejo", "sistemas"],
-  },
+  // {
+  //   nombre: "Ingeniería Civil",
+  //   nombrecorto: "Civil",
+  //   planes: ["civil", "civil-2020"],
+  // },
+  // {
+  //   nombre: "Ingeniería de Alimentos",
+  //   nombrecorto: "Alimentos",
+  //   planes: ["alimentos", "alimentos-2020"],
+  // },
+  // {
+  //   nombre: "Ingeniería en Energía Eléctrica",
+  //   nombrecorto: "Electricista",
+  //   planes: ["electricista", "energia-electrica-2020"],
+  // },
+  // {
+  //   nombre: "Ingeniería Electrónica",
+  //   nombrecorto: "Electrónica",
+  //   planes: ["electronica", "electronica-2020"],
+  // },
+  // {
+  //   nombre: "Ingeniería en Agrimensura",
+  //   nombrecorto: "Agrimensura",
+  //   planes: ["agrimensura", "agrimensura-2020"],
+  // },
+  // {
+  //   nombre: "Ingeniería en Informática",
+  //   nombrecorto: "Informática",
+  //   planes: ["informatica", "informatica-2020"],
+  // },
+  // {
+  //   nombre: "Ingeniería en Petróleo",
+  //   nombrecorto: "Petróleo",
+  //   planes: ["petroleo", "petroleo-2020"],
+  // },
+  // {
+  //   nombre: "Ingeniería Industrial",
+  //   nombrecorto: "Industrial",
+  //   planes: ["industrial", "industrial-2020"],
+  // },
+  // {
+  //   nombre: "Ingeniería Mecánica",
+  //   nombrecorto: "Mecánica",
+  //   planes: ["mecanica", "mecanica-2020"],
+  // },
+  // {
+  //   nombre: "Ingeniería Naval y Mecánica",
+  //   nombrecorto: "Naval",
+  //   planes: ["naval"],
+  // },
+  // {
+  //   nombre: "Ingeniería Química",
+  //   nombrecorto: "Química",
+  //   planes: ["quimica", "quimica-2020"],
+  // },
+  // {
+  //   nombre: "Licenciatura en Análisis de Sistemas",
+  //   nombrecorto: "Sistemas",
+  //   planes: ["sistemasviejo", "sistemas"],
+  // },
 ];
