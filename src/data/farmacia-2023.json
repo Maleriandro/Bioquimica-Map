@@ -432,18 +432,6 @@
 		"requiere": 38,
 		"requiereCBC": true,
 		"level": 10
-	},
-	{
-		"id": "IB1",
-		"materia": "Cinetica Enzimatica",
-		"creditos": 1,
-		"correlativas": "",
-		"correlativa-cursada": "",
-		"correlativa-rendir" : "",
-		"categoria": "Investigacion Basica",
-		"requiere": 38,
-		"requiereCBC": true,
-		"level": 10
 	}
 
 ]
