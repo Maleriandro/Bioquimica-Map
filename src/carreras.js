@@ -43,8 +43,24 @@ export const CARRERAS = [
     ],
 
     creditos: {
-      total: 42,
-      electivas: 0
+      total: 48,
+      electivas: 5
+    }
+  },
+  {
+    id: "farmacia",
+    link: "https://www.ffyb.uba.ar/wp-content/uploads/2025/03/Farmacia-Plan-2023-simplif.pdf",
+    ano: 2023,
+    graph: require("./data/farmacia-2023.json"),
+    orientaciones: [
+      { nombre: "Farmacia Oficial", colorScheme: "orientacion1" },
+      { nombre: "Farmacia Hospitalaria", colorScheme: "orientacion2" },
+      { nombre: "Farmacia Industrial", colorScheme: "orientacion3" },
+    ],
+    dependencia_final_y_cursada_separado: true,
+    creditos: {
+      total: 43,
+      electivas: 2
     }
   },
   {
@@ -654,6 +670,11 @@ export const PLANES = [
     nombre: "Bioquímica",
     nombrecorto: "Bioquímica",
     planes: ["bioquimica"],
+  },
+  {
+    nombre: "Farmacia",
+    nombrecorto: "Farmacia",
+    planes: ["farmacia"],
   },
   // {
   //   nombre: "Ingeniería Civil",
