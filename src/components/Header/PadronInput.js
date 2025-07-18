@@ -45,7 +45,7 @@ const PadronInput = () => {
         borderColor="white"
         color="white"
         name="padron"
-        placeholder="Padrón"
+        placeholder="DNI"
         value={user.padron || padronInput}
         autoFocus={true}
         isReadOnly={loading || logged}
