@@ -157,7 +157,7 @@ class Node implements NodeType {
 
   // Actualiza el nodo de acuerdo a tooodas sus propiedades
   // Se encarga de cambiarle el grupo (por ejemplo si pasa a estar aprobada, habilitada, etc),
-  // las labels (cuando estas logueado muestra la nota), el color de las labels (de acuerdo al color theme)
+  // las labels (cuando estas logueado muestra la nota), el color de las labels (de acuerdo a si el tema es claro u oscuro)
   // y de ocultar la tesis cuando elegis tpp, y viceversa
   // Esta funcion esta pensada para llamarse a todos los nodos juntos cada vez que cambia algo
   // Porque esta todo tan entrelazado que actualizar solamente un nodo no va a ser fiel a la realidad

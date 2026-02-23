@@ -25,7 +25,7 @@ const Controls = () => {
     >
       <Tooltip
         placement="top"
-        label={`${useColorModeValue("Dark", "Light")} theme`}
+        label={`Tema ${useColorModeValue("oscuro", "claro")}`}
       >
         <Link onClick={toggleColorMode}>
           {useColorModeValue(
