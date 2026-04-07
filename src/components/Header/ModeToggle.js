@@ -8,7 +8,6 @@ const ModeToggle = () => {
 
   const activeBg = useColorModeValue("blue.500", "blue.600");
   const activeColor = "white";
-  const inactiveBg = useColorModeValue("gray.200", "gray.700");
   const inactiveColor = useColorModeValue("gray.700", "gray.300");
   const hoverBg = useColorModeValue("gray.300", "gray.600");
   const borderColor = useColorModeValue("gray.300", "gray.600");
