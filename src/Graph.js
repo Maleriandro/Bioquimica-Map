@@ -17,6 +17,9 @@ const Graph = (userContext) => {
   // Guardamos cuantos aplazos se tienen para computar en el promedio
   const [aplazos, setAplazos] = React.useState(0);
 
+  // Toggle global: "cursar" o "rendir"
+  const [currentMode, setCurrentMode] = React.useState("cursar");
+
   // La network es nuestra interfaz con visjs.
   // Nos da acceso a los nodos, las aristas y varias funciones
   // https://visjs.github.io/vis-network/docs/network/
@@ -107,6 +110,15 @@ const Graph = (userContext) => {
       lastZoomPosition = network.getViewPosition();
     });
 
+    // Log del Y mientras se arrastra un nodo
+    network.on("dragging", (params) => {
+      if (params.nodes.length > 0) {
+        // const nodeId = params.nodes[0];
+        // const positions = network.getPositions([nodeId]);
+        // console.log(`[Y] Nodo ${nodeId}: ${positions[nodeId].y}`);
+      }
+    });
+
     // Le pongo una key al network para poder compararla contra la key del graph
     network.key = user.carrera.id;
 
@@ -145,10 +157,12 @@ const Graph = (userContext) => {
     const edges = user.carrera.graph.flatMap((n) => {
       let e = [];
 
-      
+      // Siempre usamos correlativa-cursada en el setup inicial
+      // Las edges se actualizarán dinámicamente en un useEffect cuando cambie currentMode
+      const correlativas = n["correlativa-cursada"];
 
-      if (n["correlativa-cursada"]) {
-        n["correlativa-cursada"].split(" ").forEach((c) => {
+      if (correlativas) {
+        correlativas.split(" ").forEach((c) => {
           let [tipo, id] = c.split(":");
 
           e.push({
@@ -241,6 +255,74 @@ const Graph = (userContext) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user.padron, graph.key, network]);
 
+  // Actualiza dinámicamente las edges cuando cambia el modo (cursar vs rendir)
+  // No modifica los nodos, solo las aristas (flechas)
+  React.useEffect(() => {
+    if (!network || graph.key !== network.key) return;
+    
+    console.log(`[ModoToggle] Modo cambiado a: ${currentMode}. Actualizando edges...`);
+    
+    // Regenera las edges basadas en el nuevo modo
+    const newEdges = user.carrera.graph.flatMap((n) => {
+      let e = [];
+      
+      // Usa el campo correcto según el modo actual
+      const campoCorrelativas = currentMode === "cursar" ? "correlativa-cursada" : "correlativa-rendir";
+      const correlativas = n[campoCorrelativas];
+      
+      if (correlativas) {
+        correlativas.split(" ").forEach((c) => {
+          let [tipo, id] = c.split(":");
+          
+          e.push({
+            from: id,
+            to: n.id,
+            smooth: { enabled: true, type: "curvedCW", roundness: 0.1 },
+            dashes: tipo === "TP",
+          });
+        });
+      }
+      
+      if (n.requiere) e.push({ from: "CBC", to: n.id, color: "transparent" });
+      return e;
+    });
+    
+    // Obtiene las edges actuales de la red
+    const graphEdges = network?.body.data.edges || edges;
+
+    
+    // Almaceno las posiciones Y actuales de los nodos antes de actualizar las edges, para intentar preservarlas después
+    const positions = network.getPositions();
+    const savedYPositions = {};
+    Object.values(network.body.nodes).forEach((node) => {
+        if (positions[node.id]) savedYPositions[node.id] = positions[node.id].y;
+      });
+    
+    // Reemplaza todas las edges con las nuevas (incluyendo las transparent)
+    graphEdges.clear();
+    graphEdges.add(newEdges);
+
+
+    
+    
+    // Recalcula la disponibilidad de materias con los nuevos requisitos
+    actualizar();
+    
+    // Mantiene el ordenamiento de cuatrimestres asignados por el usuario
+    actualizarNiveles();
+    
+    // Restaura las posiciones Y guardadas por si acaso algo las movió
+    Object.values(network.body.nodes).forEach((node) => {
+      if (savedYPositions[node.id] !== undefined) {
+        node.y = savedYPositions[node.id];
+      }
+    });
+    
+    network.redraw();
+    
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentMode]);
+
   // Funcion importantisimaaaa, recorre todos los nodos y los actualiza a todos
   // Se llama casi siempre que pasa algo.
   // Por ejemplo, cuando apruebo una materia, la llamo para que se actualizen todas las materias que habilita
@@ -268,6 +350,7 @@ const Graph = (userContext) => {
           creditos: { creditosTotales, creditosCBC },
           showLabels: logged,
           colorMode,
+          currentMode,
         }),
       ),
     );
@@ -1185,6 +1268,8 @@ const Graph = (userContext) => {
     setAplazos,
     createNetwork,
     networkRef,
+    currentMode,
+    setCurrentMode,
   };
 };
 
