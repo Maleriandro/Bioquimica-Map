@@ -5,6 +5,7 @@ import MateriaDisplay from "./MateriaDisplay";
 import PadronInput from "./PadronInput";
 import DropdownCarreras from "./DropdownCarreras";
 import UserMenu from "./UserMenu";
+import ModeToggle from "./ModeToggle";
 
 // Componente toplevel de header
 // Si tengo una materia clickeada, muestra sus controles
@@ -48,6 +49,7 @@ const Header = () => {
       {!displayedNode && (
         <Flex {...CommonProps} {...(!displayedNode && FlexProps)}>
           {logged ? <UserMenu /> : <PadronInput />}
+          <ModeToggle />
           <DropdownCarreras />
         </Flex>
       )}

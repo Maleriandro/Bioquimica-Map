@@ -113,13 +113,27 @@ class Node {
 
     let materiasNecesariasParaCursar = [];
 
+    // Determina dinámicamente qué campo de requisitos usar según el modo actual
+    const modoActual = ctx.currentMode || "cursar";
+    const campoRequisitos = modoActual === "cursar" ? "correlativa-cursada" : "correlativa-rendir";
 
-    if (this["correlativa-cursada"] !== undefined) {
-      materiasNecesariasParaCursar = this["correlativa-cursada"].split(" ");
-    } else if (this["correlativa-final"] !== undefined) {
-      materiasNecesariasParaCursar = this["correlativa-final"].split(" ");
-    } else if (this["correlativas"] !== undefined) {
-      materiasNecesariasParaCursar = this["correlativas"].split(" ");
+    // Intenta usar el campo del modo. Si no existe, usa fallback
+    if (this[campoRequisitos] !== undefined) {
+      materiasNecesariasParaCursar = this[campoRequisitos].split(" ");
+    } else {
+      // Fallback: si correlativa-rendir no existe, loguear advertencia y usar correlativa-cursada
+      if (modoActual === "rendir" && this["correlativa-rendir"] === undefined) {
+        console.warn(`[ModoToggle] Materia "${this.materia}" (${this.id}) no tiene correlativa-rendir definida. Usando correlativa-cursada como fallback.`);
+      }
+      
+      // Intenta los otros campos en orden de preferencia
+      if (this["correlativa-cursada"] !== undefined) {
+        materiasNecesariasParaCursar = this["correlativa-cursada"].split(" ");
+      } else if (this["correlativa-final"] !== undefined) {
+        materiasNecesariasParaCursar = this["correlativa-final"].split(" ");
+      } else if (this["correlativas"] !== undefined) {
+        materiasNecesariasParaCursar = this["correlativas"].split(" ");
+      }
     }
 
     const materiasCursadasNecesariaParaCursar = []
