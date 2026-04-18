@@ -3,13 +3,19 @@ import React from "react";
 import { CARRERAS } from "./carreras";
 import { CREDITOS } from "./constants";
 import Node from "./Node";
-import { COLORS } from "./theme";
+import { COLORS, DOT_PATTERN_CONFIG } from "./theme";
 import { accCreditos, accCreditosNecesarios, accProportion } from "./utils";
 import useResizeObserver from "use-resize-observer";
 
 const Graph = (userContext) => {
   const { user, setUser, logged, saveUserGraph, register } = userContext;
   const { colorMode } = useColorMode();
+  
+  // Usar un ref para capturar el colorMode actual dinámicamente
+  const colorModeRef = React.useRef(colorMode);
+  React.useEffect(() => {
+    colorModeRef.current = colorMode;
+  }, [colorMode]);
 
   // Guardamos en el estado que nodo esta clickeado, para mostrarlo en el header
   const [displayedNode, setDisplayedNode] = React.useState("");
@@ -122,26 +128,74 @@ const Graph = (userContext) => {
     // Le pongo una key al network para poder compararla contra la key del graph
     network.key = user.carrera.id;
 
-    // Por mas que me encante este efecto, le agrega mucho tiempo de carga a la pagina antes de abrir
-    // Lo dejo comentado nada mas por lo mucho que me gusta
-    // https://stackoverflow.com/a/72950605/10728610
-    // https://www.seancdavis.com/posts/mutlicolored-dotted-grid-canvas/
-    // https://github.com/open-source-labs/Svelvet/blob/main/src/lib/containers/Background/Background.svelte
-    // network.on("beforeDrawing", function (ctx) {
-    //   var width = ctx.canvas.clientWidth;
-    //   var height = ctx.canvas.clientHeight;
-    //   var spacing = 24;
-    //   var gridExtentFactor = 1.5;
-    //   ctx.fillStyle = "darkgray"
+    const getDotColor = () => {
+      const isDark = colorModeRef.current === "dark";
+      return DOT_PATTERN_CONFIG.colors[isDark ? "dark" : "light"];
+    };
 
-    //   for (var x = -width * gridExtentFactor; x <= width * gridExtentFactor; x += spacing) {
-    //     for (var y = -height * gridExtentFactor; y <= height * gridExtentFactor; y += spacing) {
-    //       ctx.beginPath();
-    //       ctx.arc(x, y, 1, 0, 2 * Math.PI, false);
-    //       ctx.fill();
-    //     }
-    //   }
-    // });
+    const patternCache = { pattern: null, colorMode: null };
+
+    const createDotPattern = (ctx) => {
+      const { spacing, radius } = DOT_PATTERN_CONFIG;
+      const patternCanvas = document.createElement("canvas");
+      patternCanvas.width = spacing;
+      patternCanvas.height = spacing;
+
+      const patternCtx = patternCanvas.getContext("2d", { alpha: true });
+
+      patternCtx.fillStyle = getDotColor();
+      patternCtx.beginPath();
+      patternCtx.arc(spacing / 2, spacing / 2, radius, 0, Math.PI * 2);
+      patternCtx.fill();
+
+      return ctx.createPattern(patternCanvas, "repeat");
+    };
+
+    // Patrón híbrido: patrón para zoom out, dibujo directo para zoom in
+    network.on("beforeDrawing", function (ctx) {
+      const isDark = colorModeRef.current === "dark";
+      const zoom = network.getScale();
+      const { width, height } = ctx.canvas;
+      const { spacing, radius, zoomThreshold, infiniteBounds } = DOT_PATTERN_CONFIG;
+      const halfSpacing = spacing / 2;
+
+      if (zoom < zoomThreshold) {
+        // ZOOM OUT: patrón repetido cacheado
+        if (patternCache.colorMode !== isDark) {
+          patternCache.pattern = createDotPattern(ctx);
+          patternCache.colorMode = isDark;
+        }
+        ctx.fillStyle = patternCache.pattern;
+        ctx.fillRect(-infiniteBounds, -infiniteBounds, infiniteBounds * 2, infiniteBounds * 2);
+      } else {
+        // ZOOM IN: dibujo directo en el canvas los puntos, pero unicamente los que si sean visibles.
+        const viewPos = network.getViewPosition();
+
+        // Calcular viewport en coordenadas del mundo
+        const worldBounds = {
+          left: viewPos.x - width / 2 / zoom,
+          right: viewPos.x + width / 2 / zoom,
+          top: viewPos.y - height / 2 / zoom,
+          bottom: viewPos.y + height / 2 / zoom
+        };
+
+        // Alinear puntos al grid, dibujando unicamente los puntos
+        const startX = Math.floor((worldBounds.left + halfSpacing) / spacing) * spacing + halfSpacing;
+        const endX = Math.ceil((worldBounds.right + halfSpacing) / spacing) * spacing + halfSpacing;
+        const startY = Math.floor((worldBounds.top + halfSpacing) / spacing) * spacing + halfSpacing;
+        const endY = Math.ceil((worldBounds.bottom + halfSpacing) / spacing) * spacing + halfSpacing;
+
+        ctx.fillStyle = getDotColor();
+
+        for (let x = startX; x <= endX; x += spacing) {
+          for (let y = startY; y <= endY; y += spacing) {
+            ctx.beginPath();
+            ctx.arc(x, y, radius, 0, Math.PI * 2);
+            ctx.fill();
+          }
+        }
+      }
+    });
 
     setNetwork(network);
   };
@@ -1270,6 +1324,7 @@ const Graph = (userContext) => {
     networkRef,
     currentMode,
     setCurrentMode,
+    network,
   };
 };
 
