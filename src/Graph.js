@@ -133,7 +133,7 @@ const Graph = (userContext) => {
       return DOT_PATTERN_CONFIG.colors[isDark ? "dark" : "light"];
     };
 
-    const patternCache = { pattern: null, colorMode: null, previousZoom: 0 };
+    const patternCache = { pattern: null, colorMode: null };
 
     const createDotPattern = (ctx) => {
       const { spacing, radius } = DOT_PATTERN_CONFIG;
@@ -186,13 +186,17 @@ const Graph = (userContext) => {
         const endY = Math.ceil((worldBounds.bottom + halfSpacing) / spacing) * spacing + halfSpacing - 2*spacing;
 
         ctx.fillStyle = getDotColor();
+        
+        const rowPath = new Path2D();
+        for (let y = startY; y <= endY; y += spacing) {
+          rowPath.arc(0, y - startY, radius, 0, Math.PI * 2);
+        }
 
         for (let x = startX; x <= endX; x += spacing) {
-          ctx.beginPath();
-          for (let y = startY; y <= endY; y += spacing) {
-            ctx.arc(x, y, radius, 0, Math.PI * 2);
-          }
-          ctx.fill();
+          ctx.save();
+          ctx.translate(x, startY);
+          ctx.fill(rowPath);
+          ctx.restore();
         }
 
         // // DEBUG: Rectángulo de área de viewport
