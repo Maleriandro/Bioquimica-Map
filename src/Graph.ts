@@ -195,12 +195,16 @@ const Graph = (userContext: UserType.Context): GraphType.Context => {
 
         ctx.fillStyle = getDotColor();
 
+        const rowPath = new Path2D();
+        for (let y = startY; y <= endY; y += spacing) {
+          rowPath.arc(0, y - startY, radius, 0, Math.PI * 2);
+        }
+
         for (let x = startX; x <= endX; x += spacing) {
-          for (let y = startY; y <= endY; y += spacing) {
-            ctx.beginPath();
-            ctx.arc(x, y, radius, 0, Math.PI * 2);
-            ctx.fill();
-          }
+          ctx.save();
+          ctx.translate(x, startY);
+          ctx.fill(rowPath);
+          ctx.restore();
         }
       }
     });
