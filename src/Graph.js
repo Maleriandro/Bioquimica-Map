@@ -133,7 +133,7 @@ const Graph = (userContext) => {
       return DOT_PATTERN_CONFIG.colors[isDark ? "dark" : "light"];
     };
 
-    const patternCache = { pattern: null, colorMode: null };
+    const patternCache = { pattern: null, colorMode: null, previousZoom: 0 };
 
     const createDotPattern = (ctx) => {
       const { spacing, radius } = DOT_PATTERN_CONFIG;
@@ -181,19 +181,29 @@ const Graph = (userContext) => {
 
         // Alinear puntos al grid, dibujando unicamente los puntos
         const startX = Math.floor((worldBounds.left + halfSpacing) / spacing) * spacing + halfSpacing;
-        const endX = Math.ceil((worldBounds.right + halfSpacing) / spacing) * spacing + halfSpacing;
+        const endX = Math.ceil((worldBounds.right + halfSpacing) / spacing) * spacing + halfSpacing - 2*spacing;
         const startY = Math.floor((worldBounds.top + halfSpacing) / spacing) * spacing + halfSpacing;
-        const endY = Math.ceil((worldBounds.bottom + halfSpacing) / spacing) * spacing + halfSpacing;
+        const endY = Math.ceil((worldBounds.bottom + halfSpacing) / spacing) * spacing + halfSpacing - 2*spacing;
 
         ctx.fillStyle = getDotColor();
 
         for (let x = startX; x <= endX; x += spacing) {
+          ctx.beginPath();
           for (let y = startY; y <= endY; y += spacing) {
-            ctx.beginPath();
             ctx.arc(x, y, radius, 0, Math.PI * 2);
-            ctx.fill();
           }
+          ctx.fill();
         }
+
+        // // DEBUG: Rectángulo de área de viewport
+        // ctx.strokeStyle = "rgba(255, 0, 0, 0.5)";
+        // ctx.lineWidth = 2 / zoom;
+        // ctx.strokeRect(worldBounds.left, worldBounds.top, worldBounds.right - worldBounds.left, worldBounds.bottom - worldBounds.top);
+
+        // // DEBUG: Rectángulo de área de grid (donde se dibujan los puntos)
+        // ctx.strokeStyle = "rgba(0, 255, 0, 0.5)";
+        // ctx.lineWidth = 2 / zoom;
+        // ctx.strokeRect(startX, startY, endX - startX, endY - startY);
       }
     });
 
