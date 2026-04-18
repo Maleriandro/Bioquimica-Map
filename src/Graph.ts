@@ -189,9 +189,9 @@ const Graph = (userContext: UserType.Context): GraphType.Context => {
 
         // Alinear puntos al grid, dibujando unicamente los puntos
         const startX = Math.floor((worldBounds.left + halfSpacing) / spacing) * spacing + halfSpacing;
-        const endX = Math.ceil((worldBounds.right + halfSpacing) / spacing) * spacing + halfSpacing;
+        const endX = Math.ceil((worldBounds.right + halfSpacing) / spacing) * spacing + halfSpacing - 2*spacing;
         const startY = Math.floor((worldBounds.top + halfSpacing) / spacing) * spacing + halfSpacing;
-        const endY = Math.ceil((worldBounds.bottom + halfSpacing) / spacing) * spacing + halfSpacing;
+        const endY = Math.ceil((worldBounds.bottom + halfSpacing) / spacing) * spacing + halfSpacing - 2*spacing;
 
         ctx.fillStyle = getDotColor();
 
