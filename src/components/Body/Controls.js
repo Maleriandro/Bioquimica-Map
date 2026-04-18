@@ -34,7 +34,7 @@ const Controls = () => {
           )}
         </Link>
       </Tooltip>
-      <Tooltip placement="top" label="Maleriandro/Bioquimica-Map">
+      <Tooltip placement="top" label="Maleriandro/Bioquimica–Map">
         <Link isExternal href="https://github.com/Maleriandro/Bioquimica-Map">
           <Icon
             boxSize={{ base: 4, md: 5 }}
