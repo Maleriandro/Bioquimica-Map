@@ -76,6 +76,19 @@ export const COLORS = {
   },
 };
 
+export const DOT_PATTERN_CONFIG = {
+  spacing: 20,              // Distance between dots in pixels (at zoom level 1)
+  radius: 1,                // Radius of each dot in pixels (at zoom level 1)
+  zoomThreshold: 1,         // Zoom level where the pattern stops being a CanvasPattern, and starts being drawn manually
+                            // This is because at zoom > 1, the pattern becomes blurry.
+                            // Drawing manually mantains pixel-perfect dots, but is more expensive than CanvasPattern.
+  infiniteBounds: 50000,    // The pattern will be drawn in a square of size infiniteBounds centered on the viewport.
+  colors: {                 // Colors for the dot pattern, depending on the color mode
+    dark: "#3a3a3a",  
+    light: "#d0d5dd",
+  },
+};
+
 const config = {
   initialColorMode: "system",
 };
