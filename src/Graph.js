@@ -172,11 +172,13 @@ const Graph = (userContext) => {
         const viewPos = network.getViewPosition();
 
         // Calcular viewport en coordenadas del mundo
+        // Extendemos los bounds por el radius de los puntos para asegurar que
+        // los puntos que están parcialmente en el viewport se rendericen
         const worldBounds = {
-          left: viewPos.x - width / 2 / zoom,
-          right: viewPos.x + width / 2 / zoom,
-          top: viewPos.y - height / 2 / zoom,
-          bottom: viewPos.y + height / 2 / zoom
+          left: viewPos.x - width / 2 / zoom - radius / zoom,
+          right: viewPos.x + width / 2 / zoom + radius / zoom,
+          top: viewPos.y - height / 2 / zoom - radius / zoom,
+          bottom: viewPos.y + height / 2 / zoom + radius / zoom
         };
 
         // Alinear puntos al grid, dibujando unicamente los puntos
